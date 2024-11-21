@@ -21,6 +21,7 @@ module com.example.simulating_operations_of_an_epz {
     exports com.example.simulating_operations_of_an_epz.rathna.company;
     opens com.example.simulating_operations_of_an_epz.rathna.dBEnterpriseService to javafx.fxml;
     exports com.example.simulating_operations_of_an_epz.rathna.dBEnterpriseService;
-
+    opens com.example.simulating_operations_of_an_epz.login to javafx.fxml;
+    exports com.example.simulating_operations_of_an_epz.login;
 
 }
