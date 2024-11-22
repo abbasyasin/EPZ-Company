@@ -34,7 +34,7 @@ public class LoginSceneController {
 
     @javafx.fxml.FXML
     public void createNewAccountButtonOnClicked(ActionEvent actionEvent) throws IOException {
-        Parent scene2Parent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/oop/simulationoperationgozayan/login/signupScene.fxml")));
+        Parent scene2Parent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/example/simulating_operations_of_an_epz/login/signupScene.fxml")));
         Scene scene2 = new Scene(scene2Parent);
         Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
         window.setTitle("Signup");
