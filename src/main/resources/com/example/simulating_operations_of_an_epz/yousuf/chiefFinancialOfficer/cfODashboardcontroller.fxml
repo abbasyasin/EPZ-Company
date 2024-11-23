@@ -33,7 +33,7 @@
             <Font size="17.0" />
          </font>
       </Button>
-      <Button layoutX="7.0" layoutY="237.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="187.0" text="Departmental budget" textFill="#0618e0">
+      <Button layoutX="7.0" layoutY="237.0" mnemonicParsing="false" onAction="#departmentalBudgetAllocation" prefHeight="66.0" prefWidth="187.0" text="Departmental budget" textFill="#0618e0">
          <font>
             <Font size="17.0" />
          </font>

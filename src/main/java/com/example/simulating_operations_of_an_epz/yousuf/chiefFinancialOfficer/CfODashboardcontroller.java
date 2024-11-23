@@ -24,6 +24,23 @@ public class CfODashboardcontroller {
     }
 
     @FXML
-    public void yearlyBudgetAllocated(ActionEvent actionEvent) {
+    public void yearlyBudgetAllocated(ActionEvent event) throws IOException {
+        Parent scene2Parent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/example/simulating_operations_of_an_epz/yousuf/chiefFinancialOfficer/yearlyBudgetAllocated.fxml")));
+        Scene scene2 = new Scene(scene2Parent);
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setTitle("Yearly Budget");
+        window.setScene(scene2);
+        window.show();
+    }
+
+    @FXML
+    public void departmentalBudgetAllocation(ActionEvent event) throws IOException {
+        Parent scene2Parent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/example/simulating_operations_of_an_epz/yousuf/chiefFinancialOfficer/depeartmentalBudget.fxml")));
+        Scene scene2 = new Scene(scene2Parent);
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setTitle("Departmental Budget");
+        window.setScene(scene2);
+        window.show();
     }
 }
+
