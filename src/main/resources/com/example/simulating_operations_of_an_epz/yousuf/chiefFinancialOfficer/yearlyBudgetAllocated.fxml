@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
@@ -19,7 +20,7 @@
             <Image url="@yearly_budget.jpg" />
         </image>
     </ImageView>
-   <Label layoutX="121.0" layoutY="20.0" prefHeight="49.0" prefWidth="480.0" text="Yearly Budget Allocation">
+   <Label layoutX="121.0" layoutY="4.0" prefHeight="49.0" prefWidth="480.0" text="Yearly Budget Allocation">
       <textFill>
          <LinearGradient endX="1.0" endY="1.0">
             <stops>
@@ -40,72 +41,46 @@
          <Font size="44.0" />
       </font>
    </Label>
-   <Button layoutX="267.0" layoutY="391.0" mnemonicParsing="false" onAction="#createBudgetButton" prefHeight="47.0" prefWidth="169.0" style="-fx-background-color: navy;" text="Create Budget" textFill="#f1f4f1">
+   <Button layoutX="253.0" layoutY="254.0" mnemonicParsing="false" onAction="#createBudgetButton" prefHeight="47.0" prefWidth="169.0" style="-fx-background-color: navy;" text="Create Budget" textFill="#f1f4f1">
       <font>
          <Font name="System Bold" size="19.0" />
       </font>
    </Button>
-   <TextField fx:id="InfrastructureMaintenanceTextArea" layoutX="437.0" layoutY="98.0" prefHeight="25.0" prefWidth="183.0" />
-   <Label layoutX="121.0" layoutY="94.0" prefHeight="33.0" prefWidth="219.0" style="-fx-background-color: white;" text="Infrastructure Maintenance">
-      <font>
-         <Font name="System Bold" size="16.0" />
-      </font>
-   </Label>
-   <Label layoutX="120.0" layoutY="140.0" prefHeight="33.0" prefWidth="219.0" style="-fx-background-color: white;" text="Salaries and Benefits" textFill="#1f1d1de5">
-      <font>
-         <Font name="System Bold" size="16.0" />
-      </font>
-   </Label>
-   <TextField fx:id="SalariesandBenefitsTextArea" layoutX="437.0" layoutY="144.0" prefHeight="25.0" prefWidth="183.0" />
-   <Label layoutX="121.0" layoutY="182.0" prefHeight="33.0" prefWidth="219.0" style="-fx-background-color: white;" text="Marketing and Promotions">
-      <font>
-         <Font name="System Bold" size="16.0" />
-      </font>
-   </Label>
-   <TextField fx:id="MarketingandPromotionsTextArea" layoutX="437.0" layoutY="186.0" prefHeight="25.0" prefWidth="183.0" />
-   <Label layoutX="120.0" layoutY="227.0" prefHeight="33.0" prefWidth="219.0" style="-fx-background-color: white;" text="New Development Project">
-      <font>
-         <Font name="System Bold" size="16.0" />
-      </font>
-   </Label>
-   <TextField fx:id="NewDevelopmentProject" layoutX="437.0" layoutY="227.0" prefHeight="25.0" prefWidth="183.0" />
-   <Label layoutX="121.0" layoutY="272.0" prefHeight="33.0" prefWidth="219.0" style="-fx-background-color: white;" text="Countingency Find" textFill="#19191f">
-      <font>
-         <Font name="System Bold" size="16.0" />
-      </font>
-   </Label>
-   <Label layoutX="122.0" layoutY="315.0" prefHeight="33.0" prefWidth="219.0" style="-fx-background-color: white;" text="Miscellaneous Expenses" textFill="#19191f">
-      <font>
-         <Font name="System Bold" size="16.0" />
-      </font>
-   </Label>
-   <TextField fx:id="CountingencyFindTextArea" layoutX="437.0" layoutY="275.0" prefHeight="25.0" prefWidth="183.0" />
-   <TextField fx:id="MiscellaneousExpensesTextArea" layoutX="437.0" layoutY="316.0" prefHeight="25.0" prefWidth="183.0" />
+   <TextField fx:id="amountTextArea" layoutX="327.0" layoutY="181.0" prefHeight="25.0" prefWidth="183.0" />
    <Button layoutX="20.0" layoutY="34.0" mnemonicParsing="false" onAction="#backButtonYearlyBudget" prefHeight="33.0" prefWidth="74.0" style="-fx-background-color: red;" text="Back" textFill="WHITE">
       <font>
          <Font name="System Bold" size="12.0" />
       </font>
    </Button>
-   <Label layoutX="122.0" layoutY="356.0" prefHeight="33.0" prefWidth="219.0" style="-fx-background-color: white;" text="Total budget" textFill="#19191f">
-      <font>
-         <Font name="System Bold" size="16.0" />
-      </font>
-   </Label>
-   <TextField fx:id="totalBudgetTextArea" layoutX="437.0" layoutY="359.0" prefHeight="25.0" prefWidth="183.0" />
-   <TextField fx:id="IfsMsinpercentage" layoutX="359.0" layoutY="98.0" prefHeight="25.0" prefWidth="37.0" />
-   <Label layoutX="366.0" layoutY="77.0" text="\%" textFill="WHITE" />
-   <TextField fx:id="sBpercentage" layoutX="359.0" layoutY="144.0" prefHeight="25.0" prefWidth="37.0" />
-   <TextField fx:id="mPpercentage" layoutX="362.0" layoutY="186.0" prefHeight="25.0" prefWidth="37.0" />
-   <TextField fx:id="NDpPercentage" layoutX="362.0" layoutY="231.0" prefHeight="25.0" prefWidth="37.0" />
-   <TextField fx:id="cFpercentage" layoutX="364.0" layoutY="275.0" prefHeight="25.0" prefWidth="37.0" />
-   <TextField fx:id="MePercentage" layoutX="364.0" layoutY="319.0" prefHeight="25.0" prefWidth="37.0" />
-   <TextField fx:id="totalPercentage" layoutX="364.0" layoutY="359.0" prefHeight="25.0" prefWidth="37.0" />
-   <TableView fx:id="tableViewData" layoutX="1.0" layoutY="442.0" prefHeight="130.0" prefWidth="676.0" style="-fx-background-color: transparent;">
+   <TextField fx:id="percentageOFTExtArea" layoutX="328.0" layoutY="133.0" prefHeight="25.0" prefWidth="91.0" />
+   <Label layoutX="369.0" layoutY="147.0" text="\%" textFill="WHITE" />
+   <TableView fx:id="tableViewData" layoutY="308.0" prefHeight="249.0" prefWidth="676.0" style="-fx-background-color: transparent;">
      <columns>
        <TableColumn fx:id="tableViewCategory" prefWidth="217.33330821990967" text="Category" />
        <TableColumn fx:id="tableviewPercentageOfBudget" prefWidth="266.6667022705078" text="Percentage of Budget" />
          <TableColumn fx:id="tableViewAmount" prefWidth="183.33330281575525" text="Estimated Ammount USD" />
      </columns>
    </TableView>
+   <ComboBox fx:id="categoryCombobox" layoutX="327.0" layoutY="83.0" prefHeight="25.0" prefWidth="150.0" />
+   <Label layoutX="107.0" layoutY="76.0" prefHeight="35.0" prefWidth="169.0" style="-fx-background-color: white;" text="Category">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <Label layoutX="107.0" layoutY="128.0" prefHeight="35.0" prefWidth="169.0" style="-fx-background-color: white;" text="Percentage of Budget">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <Label layoutX="107.0" layoutY="181.0" prefHeight="35.0" prefWidth="169.0" style="-fx-background-color: white;" text="Amount">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <Button layoutX="524.0" layoutY="174.0" mnemonicParsing="false" onAction="#addBudgetBUtton" prefHeight="35.0" prefWidth="91.0" style="-fx-background-color: navy;" text="Add" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Button>
 
 </AnchorPane>

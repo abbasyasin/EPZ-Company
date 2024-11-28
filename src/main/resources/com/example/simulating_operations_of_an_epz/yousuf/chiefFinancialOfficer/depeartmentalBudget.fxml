@@ -33,53 +33,28 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <ComboBox layoutX="302.0" layoutY="69.0" prefHeight="31.0" prefWidth="168.0" />
-      <Label layoutX="96.0" layoutY="114.0" prefHeight="31.0" prefWidth="168.0" style="-fx-background-color: white;" text="Operations">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-      </Label>
-      <TextField layoutX="302.0" layoutY="114.0" prefHeight="25.0" prefWidth="168.0" />
-      <Label layoutX="97.0" layoutY="154.0" prefHeight="31.0" prefWidth="168.0" style="-fx-background-color: white;" text="Salaries">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-      </Label>
-      <TextField layoutX="303.0" layoutY="153.0" prefHeight="25.0" prefWidth="168.0" />
-      <Label layoutX="97.0" layoutY="199.0" prefHeight="31.0" prefWidth="168.0" style="-fx-background-color: white;" text="Utilities">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-      </Label>
-      <TextField layoutX="309.0" layoutY="201.0" prefHeight="25.0" prefWidth="168.0" />
-      <Label layoutX="97.0" layoutY="245.0" prefHeight="31.0" prefWidth="168.0" style="-fx-background-color: white;" text="Logistic">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-      </Label>
-      <Label layoutX="99.0" layoutY="290.0" prefHeight="31.0" prefWidth="168.0" style="-fx-background-color: white;" text="Miscellaneous">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-      </Label>
-      <TextField layoutX="309.0" layoutY="246.0" prefHeight="25.0" prefWidth="168.0" />
-      <TextField layoutX="309.0" layoutY="292.0" prefHeight="25.0" prefWidth="168.0" />
-      <Label layoutX="99.0" layoutY="334.0" prefHeight="31.0" prefWidth="168.0" style="-fx-background-color: white;" text="Total Budget">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-      </Label>
-      <TextField layoutX="313.0" layoutY="333.0" prefHeight="25.0" prefWidth="168.0" />
-      <Button layoutX="215.0" layoutY="369.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="195.0" style="-fx-background-color: navy;" text="Create Budget" textFill="WHITE">
+      <ComboBox fx:id="departmentcombobox" layoutX="302.0" layoutY="69.0" prefHeight="31.0" prefWidth="168.0" />
+      <TextField fx:id="amounttextArea" layoutX="302.0" layoutY="114.0" prefHeight="25.0" prefWidth="168.0" />
+      <Button layoutX="204.0" layoutY="214.0" mnemonicParsing="false" onAction="#createBudgetForDepartmentButton" prefHeight="47.0" prefWidth="195.0" style="-fx-background-color: navy;" text="Create Budget" textFill="WHITE">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
       </Button>
-      <TableView layoutX="4.0" layoutY="421.0" prefHeight="131.0" prefWidth="677.0">
+      <TableView fx:id="tableview" layoutY="270.0" prefHeight="285.0" prefWidth="677.0">
         <columns>
-          <TableColumn prefWidth="329.33332347869873" text="Department " />
-            <TableColumn prefWidth="321.9999694824219" text="Budget" />
+          <TableColumn fx:id="depaermentcolumn" prefWidth="329.33332347869873" text="Department " />
+            <TableColumn fx:id="budgetColumn" prefWidth="321.9999694824219" text="Budget" />
         </columns>
       </TableView>
+      <Label layoutX="96.0" layoutY="111.0" prefHeight="31.0" prefWidth="168.0" style="-fx-background-color: white;" text="Amount">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="485.0" layoutY="103.0" mnemonicParsing="false" onAction="#addButton" prefHeight="47.0" prefWidth="195.0" style="-fx-background-color: navy;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

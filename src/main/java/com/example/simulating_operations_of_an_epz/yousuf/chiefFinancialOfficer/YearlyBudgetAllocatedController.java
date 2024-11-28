@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -17,41 +18,31 @@ import java.util.Objects;
 public class YearlyBudgetAllocatedController {
 
     @FXML
-    private TextField SalariesandBenefitsTextArea;
+    private TextField amountTextArea;
+
     @FXML
-    private TextField CountingencyFindTextArea;
+    private ComboBox<String> categoryCombobox;
+
     @FXML
-    private TextField MarketingandPromotionsTextArea;
+    private TextField percentageOFTExtArea;
+
     @FXML
-    private TextField InfrastructureMaintenanceTextArea;
+    private TableColumn<?, ?> tableViewAmount;
+
     @FXML
-    private TextField NewDevelopmentProject;
+    private TableColumn<?, ?> tableViewCategory;
+
     @FXML
-    private TextField MiscellaneousExpensesTextArea;
+    private TableView<?> tableViewData;
+
     @FXML
-    private TableColumn tableViewAmount;
-    @FXML
-    private TableView tableViewData;
-    @FXML
-    private TableColumn tableViewCategory;
-    @FXML
-    private TableColumn tableviewPercentageOfBudget;
-    @FXML
-    private TextField totalBudgetTextArea;
-    @FXML
-    private TextField mPpercentage;
-    @FXML
-    private TextField cFpercentage;
-    @FXML
-    private TextField sBpercentage;
-    @FXML
-    private TextField IfsMsinpercentage;
-    @FXML
-    private TextField MePercentage;
-    @FXML
-    private TextField NDpPercentage;
-    @FXML
-    private TextField totalPercentage;
+    private TableColumn<?, ?> tableviewPercentageOfBudget;
+
+
+    public void initialize() {
+
+    }
+
 
     @FXML
     void backButtonYearlyBudget(ActionEvent event) throws IOException {
@@ -65,5 +56,9 @@ public class YearlyBudgetAllocatedController {
 
     @FXML
     public void createBudgetButton(ActionEvent event) {
+    }
+
+    @FXML
+    public void addBudgetBUtton(ActionEvent actionEvent) {
     }
 }

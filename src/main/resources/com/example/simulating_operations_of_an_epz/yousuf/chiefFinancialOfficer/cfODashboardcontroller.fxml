@@ -48,7 +48,7 @@
             <Font size="17.0" />
          </font>
       </Button>
-      <Button layoutX="10.0" layoutY="466.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="181.0" text="Meeting" textFill="#0618e0">
+      <Button layoutX="10.0" layoutY="466.0" mnemonicParsing="false" onAction="#meetingDashboard" prefHeight="66.0" prefWidth="181.0" text="Meeting" textFill="#0618e0">
          <font>
             <Font size="17.0" />
          </font>
