@@ -1,14 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.yousuf.chiefFinancialOfficer.SkillsDevolapmentWorkshopController">
+    <ImageView fitHeight="576.0" fitWidth="704.0" pickOnBounds="true">
+        <image>
+            <Image url="@Employee_traning.png" />
+        </image>
+    </ImageView>
+   <Label layoutX="257.0" layoutY="27.0" prefHeight="41.0" prefWidth="192.0" style="-fx-background-color: white;" text="Skills Development">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Label layoutX="17.0" layoutY="140.0" prefHeight="30.0" prefWidth="152.0" style="-fx-background-color: white;" text="Employee Id">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <ComboBox fx:id="employeecombobox" layoutX="204.0" layoutY="139.0" prefHeight="30.0" prefWidth="192.0" />
+   <Label layoutX="13.0" layoutY="92.0" prefHeight="30.0" prefWidth="152.0" style="-fx-background-color: white;" text="Workshop Title">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <TextField fx:id="workShopTitletextfield" layoutX="208.0" layoutY="88.0" prefHeight="30.0" prefWidth="178.0" />
+   <Label layoutX="17.0" layoutY="186.0" prefHeight="30.0" prefWidth="152.0" style="-fx-background-color: white;" text="Workshop Date">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <DatePicker fx:id="workShopDatePicker" layoutX="209.0" layoutY="186.0" />
+   <Button layoutX="408.0" layoutY="229.0" mnemonicParsing="false" onAction="#addButton" prefHeight="30.0" prefWidth="123.0" style="-fx-background-color: navy;" text="Add" textFill="WHITE">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Button>
+   <TableView fx:id="tableColumn" layoutX="7.0" layoutY="341.0" prefHeight="200.0" prefWidth="667.0" style="-fx-background-color: transparent;">
+     <columns>
+       <TableColumn fx:id="employeeIdColumn" prefWidth="106.66665887832642" text="Employee Id" />
+       <TableColumn fx:id="workshoptitleColumn" prefWidth="151.3333511352539" text="Title" />
+         <TableColumn fx:id="skillsColumn" prefWidth="251.33328247070312" text="Skill" />
+         <TableColumn fx:id="dateColumn" prefWidth="147.3333740234375" text="Date" />
+     </columns>
+   </TableView>
+   <Button layoutX="251.0" layoutY="290.0" mnemonicParsing="false" onAction="#showButton" prefHeight="30.0" prefWidth="123.0" style="-fx-background-color: navy;" text="show" textFill="WHITE">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Button>
+   <Label layoutX="17.0" layoutY="229.0" prefHeight="30.0" prefWidth="152.0" style="-fx-background-color: white;" text="skills">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <ComboBox fx:id="skillsComboBox" layoutX="204.0" layoutY="229.0" prefHeight="30.0" prefWidth="192.0" />
+   <Button layoutX="24.0" layoutY="27.0" mnemonicParsing="false" onAction="#backbutton" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: red;" text="Back">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Button>
 
 </AnchorPane>

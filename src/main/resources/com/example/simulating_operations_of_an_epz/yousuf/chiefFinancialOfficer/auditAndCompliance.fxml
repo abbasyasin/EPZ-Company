@@ -1,14 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.yousuf.chiefFinancialOfficer.AuditAndComplianceController">
+    <ImageView fitHeight="576.0" fitWidth="704.0" pickOnBounds="true">
+        <image>
+            <Image url="@audit-picture.jpg" />
+        </image>
+    </ImageView>
+   <Label layoutX="174.0" layoutY="16.0" prefHeight="41.0" prefWidth="279.0" style="-fx-background-color: white;" text="Audit and Compliance">
+      <font>
+         <Font name="System Bold" size="26.0" />
+      </font>
+   </Label>
+   <Label layoutX="36.0" layoutY="107.0" prefHeight="27.0" prefWidth="118.0" style="-fx-background-color: white;" text="Audit ID">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Label>
+   <Label layoutX="36.0" layoutY="154.0" prefHeight="27.0" prefWidth="125.0" style="-fx-background-color: white;" text="Audit Type">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Label>
+   <ComboBox fx:id="auditTypeCombobox" layoutX="182.0" layoutY="155.0" prefWidth="150.0" />
+   <Label layoutX="39.0" layoutY="259.0" prefHeight="27.0" prefWidth="110.0" style="-fx-background-color: white;" text="Audit Date">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Label>
+   <DatePicker fx:id="datepicker" layoutX="183.0" layoutY="260.0" />
+   <Label layoutX="36.0" layoutY="206.0" prefHeight="27.0" prefWidth="125.0" style="-fx-background-color: white;" text="Department">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Label>
+   <ComboBox fx:id="departmentCombobox" layoutX="182.0" layoutY="207.0" prefWidth="150.0" />
+   <TextField fx:id="auditIDTextField" layoutX="178.0" layoutY="108.0" />
+   <TableView layoutX="2.0" layoutY="338.0" prefHeight="235.0" prefWidth="677.0">
+     <columns>
+       <TableColumn prefWidth="163.3333079814911" text="Audit ID" />
+       <TableColumn prefWidth="162.6666717529297" text="Audit Type" />
+         <TableColumn prefWidth="172.66668701171875" text="Department" />
+         <TableColumn prefWidth="179.33328247070312" text="Audit Date" />
+     </columns>
+   </TableView>
+   <Button layoutX="374.0" layoutY="260.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: navy;" text="Add" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </Button>
+   <Button layoutX="17.0" layoutY="299.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="655.0" style="-fx-background-color: navy;" text="Show" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </Button>
 
 </AnchorPane>

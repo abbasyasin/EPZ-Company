@@ -52,5 +52,52 @@ public class CfODashboardcontroller {
         window.setScene(scene2);
         window.show();
     }
+
+    @FXML
+    public void sendMessageForFinanceDepertment(ActionEvent event) throws IOException {
+        Parent scene2Parent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/example/simulating_operations_of_an_epz/yousuf/chiefFinancialOfficer/sendMessage.fxml")));
+        Scene scene2 = new Scene(scene2Parent);
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setTitle("Send Message");
+        window.setScene(scene2);
+        window.show();}
+
+    @FXML
+    public void updatePolicy(ActionEvent event) throws IOException {
+        Parent scene2Parent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/example/simulating_operations_of_an_epz/yousuf/chiefFinancialOfficer/updatePolicy.fxml")));
+        Scene scene2 = new Scene(scene2Parent);
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setTitle("Update Policy");
+        window.setScene(scene2);
+        window.show();}
+
+    @FXML
+    public void skillsDevelopmentworkshop(ActionEvent event) throws IOException {
+        Parent scene2Parent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/example/simulating_operations_of_an_epz/yousuf/chiefFinancialOfficer/skillsDevolapmentWorkshop.fxml")));
+        Scene scene2 = new Scene(scene2Parent);
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setTitle("Skills Development");
+        window.setScene(scene2);
+        window.show();}
+
+    @FXML
+    public void profiteComparisionYearly(ActionEvent event) throws IOException {
+        Parent scene2Parent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/example/simulating_operations_of_an_epz/yousuf/chiefFinancialOfficer/profiteComparision.fxml")));
+        Scene scene2 = new Scene(scene2Parent);
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setTitle("Profit Comparison");
+        window.setScene(scene2);
+        window.show();
+    }
+
+    @FXML
+    public void auditAndcomplainceDAshboard(ActionEvent event) throws IOException {
+        Parent scene2Parent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/example/simulating_operations_of_an_epz/yousuf/chiefFinancialOfficer/auditAndCompliance.fxml")));
+        Scene scene2 = new Scene(scene2Parent);
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setTitle("Audit Compliance");
+        window.setScene(scene2);
+        window.show();
+    }
 }
 

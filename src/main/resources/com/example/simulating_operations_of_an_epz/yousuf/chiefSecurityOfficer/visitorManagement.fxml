@@ -1,14 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.yousuf.chiefSecurityOfficer.VisitorManagementController">
+    <ImageView fitHeight="599.0" fitWidth="701.0" pickOnBounds="true">
+        <image>
+            <Image url="@visitor-Management.png" />
+        </image>
+    </ImageView>
+   <Label layoutX="197.0" layoutY="9.0" prefHeight="39.0" prefWidth="238.0" text="Visitor Management">
+      <font>
+         <Font name="System Bold" size="23.0" />
+      </font>
+   </Label>
+   <Label layoutX="4.0" layoutY="67.0" prefHeight="31.0" prefWidth="149.0" text="Visitor Name">
+      <font>
+         <Font name="System Bold" size="17.0" />
+      </font>
+   </Label>
+   <TextField fx:id="visitorNAmeTextfield" layoutX="179.0" layoutY="66.0" prefHeight="31.0" prefWidth="176.0" />
+   <Label layoutX="5.0" layoutY="113.0" prefHeight="31.0" prefWidth="149.0" text="Purpose of Visit">
+      <font>
+         <Font name="System Bold" size="17.0" />
+      </font>
+   </Label>
+   <TextField fx:id="purposeOfVisitTExtfield" layoutX="178.0" layoutY="112.0" prefHeight="31.0" prefWidth="176.0" />
+   <Label layoutX="6.0" layoutY="159.0" prefHeight="31.0" prefWidth="135.0" text="Entry Date">
+      <font>
+         <Font name="System Bold" size="17.0" />
+      </font>
+   </Label>
+   <DatePicker fx:id="entryDatePicker" layoutX="179.0" layoutY="162.0" />
+   <Label layoutX="7.0" layoutY="202.0" prefHeight="31.0" prefWidth="135.0" text="Host Person">
+      <font>
+         <Font name="System Bold" size="17.0" />
+      </font>
+   </Label>
+   <TextField fx:id="hostPersonTExtField" layoutX="179.0" layoutY="202.0" prefHeight="31.0" prefWidth="176.0" />
+   <Button layoutX="14.0" layoutY="16.0" mnemonicParsing="false" onAction="#backbutton" prefHeight="31.0" prefWidth="94.0" style="-fx-background-color: red;" text="Back">
+      <font>
+         <Font name="System Bold" size="16.0" />
+      </font>
+   </Button>
+   <Button layoutX="369.0" layoutY="205.0" mnemonicParsing="false" onAction="#addButton" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: navy;" text="Add" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </Button>
+   <TableView fx:id="tableView" layoutX="8.0" layoutY="351.0" prefHeight="200.0" prefWidth="673.0">
+     <columns>
+       <TableColumn fx:id="visitornameColumn" prefWidth="179.3333387374878" text="Visitor Name" />
+       <TableColumn fx:id="purposeOFVisitColumn" prefWidth="160.6667022705078" text="Purpose Of Visit" />
+         <TableColumn fx:id="entryDateColumn" prefWidth="167.99996948242188" text="Entry Date" />
+         <TableColumn fx:id="hostPErsonColumn" prefWidth="163.33331298828125" text="Host Person" />
+     </columns>
+   </TableView>
+   <Button layoutX="200.0" layoutY="300.0" mnemonicParsing="false" onAction="#showButton" prefHeight="32.0" prefWidth="217.0" style="-fx-background-color: navy;" text="Show" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </Button>
+
 
 </AnchorPane>

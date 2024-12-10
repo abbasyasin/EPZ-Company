@@ -1,14 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.yousuf.chiefFinancialOfficer.SendMessageController">
+    <ImageView fitHeight="576.0" fitWidth="704.0" pickOnBounds="true">
+        <image>
+            <Image url="@sendmessage.jpeg" />
+        </image>
+    </ImageView>
+   <Label layoutX="210.0" layoutY="14.0" prefHeight="33.0" prefWidth="255.0" style="-fx-background-color: white;" text="Send Message in Finance Department">
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font>
+   </Label>
+   <Label layoutX="56.0" layoutY="92.0" prefHeight="33.0" prefWidth="142.0" style="-fx-background-color: white;" text="Employee ID">
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font>
+   </Label>
+   <ComboBox fx:id="EmployeeIdCombobox" layoutX="262.0" layoutY="89.0" prefHeight="33.0" prefWidth="177.0" />
+   <Label layoutX="56.0" layoutY="148.0" prefHeight="33.0" prefWidth="142.0" style="-fx-background-color: white;" text="Type Message">
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font>
+   </Label>
+   <TextField fx:id="typeMessageTextField" layoutX="262.0" layoutY="148.0" prefHeight="33.0" prefWidth="177.0" />
+   <Button layoutX="451.0" layoutY="152.0" mnemonicParsing="false" onAction="#addbutton" prefHeight="25.0" prefWidth="91.0" style="-fx-background-color: navy;" text="Add" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Button>
+   <TableView fx:id="tableView" layoutX="14.0" layoutY="332.0" prefHeight="200.0" prefWidth="648.0">
+     <columns>
+       <TableColumn fx:id="employeeIdColumn" prefWidth="349.33335304260254" text="Employee Id" />
+       <TableColumn fx:id="typeMEssageColumn" prefWidth="297.33331298828125" text="Type Message" />
+     </columns>
+   </TableView>
+   <Button layoutX="200.0" layoutY="224.0" mnemonicParsing="false" onAction="#addAndShowButton" prefHeight="40.0" prefWidth="275.0" style="-fx-background-color: navy;" text="Send Message And Show" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </Button>
+   <Button layoutX="30.0" layoutY="18.0" mnemonicParsing="false" onAction="#backbutton" prefHeight="33.0" prefWidth="91.0" style="-fx-background-color: red;" text="Back" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="16.0" />
+      </font>
+   </Button>
 
 </AnchorPane>

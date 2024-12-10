@@ -18,44 +18,49 @@
          <font>
             <Font size="28.0" />
          </font></Label>
-      <Button layoutX="7.0" layoutY="32.0" mnemonicParsing="false" onAction="#yearlyBudgetAllocated" prefHeight="54.0" prefWidth="187.0" text="Yearly Budget" textFill="#0618e0fa">
+      <Button layoutX="7.0" layoutY="14.0" mnemonicParsing="false" onAction="#yearlyBudgetAllocated" prefHeight="54.0" prefWidth="187.0" text="Yearly Budget" textFill="#0618e0fa">
          <font>
             <Font size="17.0" />
          </font>
       </Button>
-      <Button layoutX="9.0" layoutY="389.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="181.0" text="Send Message" textFill="#0618e0">
+      <Button layoutX="6.0" layoutY="365.0" mnemonicParsing="false" onAction="#sendMessageForFinanceDepertment" prefHeight="66.0" prefWidth="181.0" text="Send Message" textFill="#0618e0">
          <font>
             <Font size="17.0" />
          </font>
       </Button>
-      <Button layoutX="7.0" layoutY="161.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="187.0" text="Skills Development" textFill="#0618e0">
+      <Button layoutX="6.0" layoutY="141.0" mnemonicParsing="false" onAction="#skillsDevelopmentworkshop" prefHeight="66.0" prefWidth="187.0" text="Skills Development" textFill="#0618e0">
          <font>
             <Font size="17.0" />
          </font>
       </Button>
-      <Button layoutX="7.0" layoutY="237.0" mnemonicParsing="false" onAction="#departmentalBudgetAllocation" prefHeight="66.0" prefWidth="187.0" text="Departmental budget" textFill="#0618e0">
+      <Button layoutX="7.0" layoutY="214.0" mnemonicParsing="false" onAction="#departmentalBudgetAllocation" prefHeight="66.0" prefWidth="187.0" text="Departmental budget" textFill="#0618e0">
          <font>
             <Font size="17.0" />
          </font>
       </Button>
-      <Button layoutX="6.0" layoutY="314.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="187.0" text="Profit Comparison" textFill="#0618e0">
+      <Button layoutX="4.0" layoutY="290.0" mnemonicParsing="false" onAction="#profiteComparisionYearly" prefHeight="66.0" prefWidth="187.0" text="Profit Comparison" textFill="#0618e0">
          <font>
             <Font size="17.0" />
          </font>
       </Button>
-      <Button layoutX="7.0" layoutY="100.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="187.0" text="update Policy " textFill="#0618e0">
+      <Button layoutX="6.0" layoutY="80.0" mnemonicParsing="false" onAction="#updatePolicy" prefHeight="54.0" prefWidth="187.0" text="update Policy " textFill="#0618e0">
          <font>
             <Font size="17.0" />
          </font>
       </Button>
-      <Button layoutX="10.0" layoutY="466.0" mnemonicParsing="false" onAction="#meetingDashboard" prefHeight="66.0" prefWidth="181.0" text="Meeting" textFill="#0618e0">
+      <Button layoutX="6.0" layoutY="441.0" mnemonicParsing="false" onAction="#meetingDashboard" prefHeight="66.0" prefWidth="181.0" text="Meeting" textFill="#0618e0">
          <font>
             <Font size="17.0" />
          </font>
       </Button>
-      <Button layoutX="256.0" layoutY="484.0" mnemonicParsing="false" onAction="#logoutCFO" prefHeight="61.0" prefWidth="210.0" text="Logout" textFill="#fd0303">
+      <Button layoutX="257.0" layoutY="517.0" mnemonicParsing="false" onAction="#logoutCFO" prefHeight="61.0" prefWidth="210.0" text="Logout" textFill="#fd0303">
          <font>
             <Font size="31.0" />
+         </font>
+      </Button>
+      <Button layoutX="5.0" layoutY="517.0" mnemonicParsing="false" onAction="#auditAndcomplainceDAshboard" prefHeight="66.0" prefWidth="226.0" text="Audit and Compliance" textFill="#0618e0">
+         <font>
+            <Font size="17.0" />
          </font>
       </Button>
    </children>
