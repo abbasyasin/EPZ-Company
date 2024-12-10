@@ -1,11 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.directorofInvestmentPromotion.DoIDashboardController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="702.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.directorofInvestmentPromotion.DoIDashboardController">
    <children>
-      <Button layoutX="274.0" layoutY="264.0" mnemonicParsing="false" onAction="#logoutOnActionbutton" text="Button" />
+       <ImageView fitHeight="634.0" fitWidth="702.0" pickOnBounds="true">
+           <image>
+               <Image url="@dipo.jpg" />
+           </image>
+       </ImageView>
+      <Button layoutX="14.0" layoutY="94.0" mnemonicParsing="false" onAction="#investmentStrategiesOnActionButton" prefHeight="54.0" prefWidth="201.0" text="Investment Strategies" textFill="#0618e0fa">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="156.0" mnemonicParsing="false" onAction="#manageMarketingCampaignsOnActionButton" prefHeight="54.0" prefWidth="201.0" text="Marketing Campaigns" textFill="#0618e0fa">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="219.0" mnemonicParsing="false" onAction="#identifyPotentialInvesotrsOnActionButton" prefHeight="54.0" prefWidth="187.0" text="Potential Investors" textFill="#0618e0fa">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="282.0" mnemonicParsing="false" onAction="#createInvestorEventPlanOnActionButton" prefHeight="54.0" prefWidth="187.0" text="Investor Event Plan" textFill="#0618e0fa">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="346.0" mnemonicParsing="false" onAction="#AnalyzeAndRecordMarketTrendsOnActionButton" prefHeight="54.0" prefWidth="187.0" text="Market Trends" textFill="#0618e0fa">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="411.0" mnemonicParsing="false" onAction="#organizeNetworkingEventForInvestorsOnActionButton" prefHeight="54.0" prefWidth="187.0" text="Networking Event" textFill="#0618e0fa">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="475.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="187.0" text="Yearly Budget" textFill="#0618e0fa">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="539.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="187.0" text="Yearly Budget" textFill="#0618e0fa">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="299.0" layoutY="548.0" mnemonicParsing="false" onAction="#doiLogoutActionButton" prefHeight="38.0" prefWidth="143.0" text="Logout" textFill="#fd0303">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Button>
+      <Label alignment="TOP_CENTER" layoutX="141.0" layoutY="33.0" prefHeight="51.0" prefWidth="433.0" style="-fx-background-color: linear-gradient(to bottom, #4caf50, #388e3c); -fx-text-fill: white; -fx-font-size: 18; -fx-font-weight: bold; -fx-padding: 10 20; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #2e7d32; -fx-border-width: 2; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 5, 0, 2, 2);" text="Director Of Investment Promotion Dashboard">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
    </children>
 </AnchorPane>
