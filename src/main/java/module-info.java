@@ -1,6 +1,7 @@
 module com.example.simulating_operations_of_an_epz {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.logging;
 
 
     opens com.example.simulating_operations_of_an_epz to javafx.fxml;
