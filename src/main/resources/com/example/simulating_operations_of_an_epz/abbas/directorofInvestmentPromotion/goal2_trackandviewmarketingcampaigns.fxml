@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.directorofInvestmentPromotion.Goal2TrackandviewmarketingcampaignsController">
+   <children>
+      <Label alignment="CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="52.0" prefWidth="600.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="Track and View Marketing Campaigns" />
+      <Label layoutX="14.0" layoutY="63.0" text="Camaign Name:" />
+      <TextField fx:id="campaignNameField" layoutX="116.0" layoutY="59.0" />
+      <Label layoutX="14.0" layoutY="101.0" text="Target Audience:" />
+      <TextField fx:id="targetAudienceField" layoutX="116.0" layoutY="97.0" />
+      <Label layoutX="14.0" layoutY="139.0" text="Budget:" />
+      <TextField fx:id="budgetField" layoutX="116.0" layoutY="135.0" />
+      <Label layoutX="312.0" layoutY="63.0" text="Start Date:" />
+      <DatePicker fx:id="startdp" layoutX="383.0" layoutY="59.0" />
+      <Label layoutX="312.0" layoutY="101.0" text="End Date:" />
+      <DatePicker fx:id="enddp" layoutX="383.0" layoutY="97.0" />
+      <Button layoutX="73.0" layoutY="175.0" mnemonicParsing="false" onAction="#goBackOnActionButton" text="Go back" />
+      <Button layoutX="253.0" layoutY="175.0" mnemonicParsing="false" onAction="#addCampaignOnActionbutton" text="Add Campaign" />
+      <Button layoutX="437.0" layoutY="175.0" mnemonicParsing="false" onAction="#loadAllCampaignsOnActionButton" text="Load all Campaigns" />
+      <TableView fx:id="campaginTable" layoutY="217.0" prefHeight="200.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="campaignNameCol" prefWidth="109.0" text="Campaign Name" />
+          <TableColumn fx:id="targetAudienceCol" prefWidth="142.5" text="Target Audience" />
+            <TableColumn fx:id="budgetColumn" prefWidth="125.5" text="Budget" />
+            <TableColumn fx:id="strtcol" prefWidth="115.0" text="Start Date" />
+            <TableColumn fx:id="endcol" prefWidth="107.0" text="End Date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
