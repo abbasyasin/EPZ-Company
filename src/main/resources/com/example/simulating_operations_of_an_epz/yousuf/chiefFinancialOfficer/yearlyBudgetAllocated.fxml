@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
@@ -46,7 +47,7 @@
          <Font name="System Bold" size="19.0" />
       </font>
    </Button>
-   <TextField fx:id="amountTextArea" layoutX="327.0" layoutY="181.0" prefHeight="25.0" prefWidth="183.0" />
+   <TextField fx:id="amountTextArea" layoutX="327.0" layoutY="178.0" prefHeight="25.0" prefWidth="183.0" />
    <Button layoutX="20.0" layoutY="34.0" mnemonicParsing="false" onAction="#backButtonYearlyBudget" prefHeight="33.0" prefWidth="74.0" style="-fx-background-color: red;" text="Back" textFill="WHITE">
       <font>
          <Font name="System Bold" size="12.0" />
@@ -56,9 +57,10 @@
    <Label layoutX="369.0" layoutY="147.0" text="\%" textFill="WHITE" />
    <TableView fx:id="tableViewData" layoutY="308.0" prefHeight="249.0" prefWidth="676.0" style="-fx-background-color: transparent;">
      <columns>
-       <TableColumn fx:id="tableViewCategory" prefWidth="217.33330821990967" text="Category" />
-       <TableColumn fx:id="tableviewPercentageOfBudget" prefWidth="266.6667022705078" text="Percentage of Budget" />
-         <TableColumn fx:id="tableViewAmount" prefWidth="183.33330281575525" text="Estimated Ammount USD" />
+       <TableColumn fx:id="tableViewCategory" prefWidth="125.33331549167633" text="Category" />
+       <TableColumn fx:id="tableviewPercentageOfBudget" prefWidth="198.00003814697266" text="Percentage of Budget" />
+         <TableColumn fx:id="tableViewAmount" prefWidth="169.33331298828125" text="Estimated Ammount USD" />
+         <TableColumn fx:id="yearColumn" prefWidth="169.33331298828125" text="Year" />
      </columns>
    </TableView>
    <ComboBox fx:id="categoryCombobox" layoutX="327.0" layoutY="83.0" prefHeight="25.0" prefWidth="150.0" />
@@ -72,15 +74,21 @@
          <Font size="16.0" />
       </font>
    </Label>
-   <Label layoutX="107.0" layoutY="181.0" prefHeight="35.0" prefWidth="169.0" style="-fx-background-color: white;" text="Amount">
+   <Label layoutX="107.0" layoutY="176.0" prefHeight="35.0" prefWidth="169.0" style="-fx-background-color: white;" text="Amount">
       <font>
          <Font size="16.0" />
       </font>
    </Label>
-   <Button layoutX="265.0" layoutY="256.0" mnemonicParsing="false" onAction="#addBudgetBUtton" prefHeight="39.0" prefWidth="161.0" style="-fx-background-color: navy;" text="Add" textFill="WHITE">
+   <Button layoutX="265.0" layoutY="262.0" mnemonicParsing="false" onAction="#addBudgetBUtton" prefHeight="39.0" prefWidth="161.0" style="-fx-background-color: navy;" text="Add" textFill="WHITE">
       <font>
          <Font name="System Bold" size="18.0" />
       </font>
    </Button>
+   <Label layoutX="115.0" layoutY="222.0" prefHeight="35.0" prefWidth="135.0" style="-fx-background-color: white;" text="Year">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <DatePicker fx:id="yearDAtePicker" layoutX="328.0" layoutY="218.0" />
 
 </AnchorPane>

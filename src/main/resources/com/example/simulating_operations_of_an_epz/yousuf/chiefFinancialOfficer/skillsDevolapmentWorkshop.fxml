@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.yousuf.chiefFinancialOfficer.SkillsDevolapmentWorkshopController">
-    <ImageView fitHeight="576.0" fitWidth="704.0" pickOnBounds="true">
+    <ImageView fitHeight="576.0" fitWidth="704.0" layoutX="-11.0" pickOnBounds="true">
         <image>
             <Image url="@Employee_traning.png" />
         </image>
@@ -46,7 +46,7 @@
          <Font size="18.0" />
       </font>
    </Button>
-   <TableView fx:id="tableColumn" layoutX="7.0" layoutY="341.0" prefHeight="200.0" prefWidth="667.0" style="-fx-background-color: transparent;">
+   <TableView fx:id="tableColumn" layoutX="-2.0" layoutY="339.0" prefHeight="200.0" prefWidth="667.0" style="-fx-background-color: transparent;">
      <columns>
        <TableColumn fx:id="employeeIdColumn" prefWidth="106.66665887832642" text="Employee Id" />
        <TableColumn fx:id="workshoptitleColumn" prefWidth="151.3333511352539" text="Title" />
@@ -54,7 +54,7 @@
          <TableColumn fx:id="dateColumn" prefWidth="147.3333740234375" text="Date" />
      </columns>
    </TableView>
-   <Button layoutX="251.0" layoutY="290.0" mnemonicParsing="false" onAction="#showButton" prefHeight="30.0" prefWidth="123.0" style="-fx-background-color: navy;" text="show" textFill="WHITE">
+   <Button layoutX="238.0" layoutY="273.0" mnemonicParsing="false" onAction="#showButton" prefHeight="30.0" prefWidth="123.0" style="-fx-background-color: navy;" text="show All" textFill="WHITE">
       <font>
          <Font size="18.0" />
       </font>

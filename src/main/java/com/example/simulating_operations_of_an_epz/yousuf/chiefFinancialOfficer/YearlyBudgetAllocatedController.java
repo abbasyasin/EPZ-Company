@@ -9,14 +9,12 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
-import javafx.scene.control.TableColumn;
 
 import java.io.*;
+import java.time.LocalDate;
 import java.util.Objects;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -43,6 +41,10 @@ public class YearlyBudgetAllocatedController {
 
     @FXML
     private TableColumn<YearlyBudget,Double> tableviewPercentageOfBudget;
+    @FXML
+    private TableColumn<YearlyBudget,LocalDate> yearColumn;
+    @FXML
+    private DatePicker yearDAtePicker;
 
 
     public void initialize() {
@@ -50,6 +52,7 @@ public class YearlyBudgetAllocatedController {
         tableViewCategory.setCellValueFactory(new PropertyValueFactory<YearlyBudget,String>("category"));
         tableViewAmount.setCellValueFactory(new PropertyValueFactory<YearlyBudget,Double>("amount"));
         tableviewPercentageOfBudget.setCellValueFactory(new PropertyValueFactory<YearlyBudget,Double>("percentage"));
+        yearColumn.setCellValueFactory(new PropertyValueFactory<YearlyBudget,LocalDate>("year"));
         loadBudgets();
 
     }
@@ -72,6 +75,7 @@ public class YearlyBudgetAllocatedController {
         String category=categoryCombobox.getValue();
         double percentage=Double.parseDouble(percentageOFTExtArea.getText());
         double ammount=Double.parseDouble(amountTextArea.getText());
+        LocalDate year=yearDAtePicker.getValue();
         double estimatedAmount=getCalculatedAmmount(percentage,ammount);
         File f= null;
         FileOutputStream fos = null;
@@ -86,7 +90,7 @@ public class YearlyBudgetAllocatedController {
                 fos=new FileOutputStream(f);
                 oos=new ObjectOutputStream(fos);
             }
-            YearlyBudget y=new YearlyBudget(category,percentage,estimatedAmount);
+            YearlyBudget y=new YearlyBudget(category,percentage,estimatedAmount,year);
             tableViewData.getItems().add(y);
 
             oos.writeObject(y);

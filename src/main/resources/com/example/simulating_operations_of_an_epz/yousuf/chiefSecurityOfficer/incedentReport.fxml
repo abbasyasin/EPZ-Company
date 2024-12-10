@@ -62,12 +62,12 @@
          <Font name="System Bold" size="18.0" />
       </font>
    </Button>
-   <TableView layoutX="6.0" layoutY="340.0" prefHeight="200.0" prefWidth="661.0">
+   <TableView fx:id="tableview" layoutX="6.0" layoutY="340.0" prefHeight="200.0" prefWidth="661.0" style="-fx-background-color: transparent;">
      <columns>
-       <TableColumn prefWidth="171.3333077430725" text="Incident Id" />
-       <TableColumn prefWidth="154.00001525878906" text="Incident Type" />
-         <TableColumn prefWidth="174.0" text="Date" />
-         <TableColumn prefWidth="153.33328247070312" text="Reported By" />
+       <TableColumn fx:id="incidentIdColumn" prefWidth="171.3333077430725" text="Incident Id" />
+       <TableColumn fx:id="incidentTypecolumn" prefWidth="154.00001525878906" text="Incident Type" />
+         <TableColumn fx:id="datecolumn" prefWidth="174.0" text="Date" />
+         <TableColumn fx:id="reportedColumn" prefWidth="153.33328247070312" text="Reported By" />
      </columns>
    </TableView>
 

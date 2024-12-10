@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
@@ -40,10 +41,11 @@
             <Font name="System Bold" size="19.0" />
          </font>
       </Button>
-      <TableView fx:id="tableview" layoutY="270.0" prefHeight="285.0" prefWidth="677.0">
+      <TableView fx:id="tableview" layoutY="270.0" prefHeight="285.0" prefWidth="677.0" style="-fx-background-color: transparent;">
         <columns>
-          <TableColumn fx:id="depaermentcolumn" prefWidth="329.33332347869873" text="Department " />
-            <TableColumn fx:id="budgetColumn" prefWidth="321.9999694824219" text="Budget" />
+          <TableColumn fx:id="depaermentcolumn" prefWidth="225.99999523162842" text="Department " />
+            <TableColumn fx:id="budgetColumn" prefWidth="256.00001525878906" text="Budget" />
+            <TableColumn fx:id="yearColumn" prefWidth="269.3333435058594" text="Year" />
         </columns>
       </TableView>
       <Label layoutX="96.0" layoutY="111.0" prefHeight="31.0" prefWidth="168.0" style="-fx-background-color: white;" text="Amount">
@@ -56,5 +58,11 @@
             <Font name="System Bold" size="19.0" />
          </font>
       </Button>
+      <Label layoutX="98.0" layoutY="152.0" prefHeight="31.0" prefWidth="168.0" style="-fx-background-color: white;" text="Year">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="yeardatePicker" layoutX="299.0" layoutY="155.0" />
    </children>
 </AnchorPane>
