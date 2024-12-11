@@ -10,9 +10,9 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="702.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.executiveChairman.executivechairmanaDashboardController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="923.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.executiveChairman.executivechairmanaDashboardController">
    <children>
-      <ImageView fitHeight="634.0" fitWidth="702.0" pickOnBounds="true">
+      <ImageView fitHeight="634.0" fitWidth="923.0" pickOnBounds="true">
          <image>
             <Image url="@../executiveChairman/executivechairmandashboard.png" />
          </image>
@@ -47,7 +47,7 @@
             <Font size="17.0" />
          </font>
       </Button>
-      <Button layoutX="14.0" layoutY="475.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="237.0" text="Yearly Budget" textFill="#0618e0fa">
+      <Button layoutX="14.0" layoutY="475.0" mnemonicParsing="false" onAction="#reviewIncedentReportsOnActionButton" prefHeight="54.0" prefWidth="237.0" text="Review Incedent Reports" textFill="#0618e0fa">
          <font>
             <Font size="17.0" />
          </font>
@@ -62,7 +62,7 @@
             <Font size="31.0" />
          </font>
       </Button>
-      <Label alignment="TOP_CENTER" layoutX="141.0" layoutY="33.0" prefHeight="51.0" prefWidth="433.0" style="-fx-background-color: linear-gradient(to bottom, #4caf50, #388e3c); -fx-text-fill: white; -fx-font-size: 18; -fx-font-weight: bold; -fx-padding: 10 20; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #2e7d32; -fx-border-width: 2; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 5, 0, 2, 2);" text="Executive Chairman DashBoard">
+      <Label alignment="TOP_CENTER" layoutX="182.0" layoutY="34.0" prefHeight="51.0" prefWidth="433.0" style="-fx-background-color: linear-gradient(to bottom, #4caf50, #388e3c); -fx-text-fill: white; -fx-font-size: 18; -fx-font-weight: bold; -fx-padding: 10 20; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #2e7d32; -fx-border-width: 2; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 5, 0, 2, 2);" text="Executive Chairman DashBoard">
          <font>
             <Font size="30.0" />
          </font>
