@@ -29,7 +29,7 @@
       </font>
    </Label>
    <TextField fx:id="meetingTitleTextArea" layoutX="289.0" layoutY="144.0" />
-   <Label layoutX="37.0" layoutY="190.0" prefHeight="32.0" prefWidth="239.0" style="-fx-background-color: green;" text="Meeting Time and Date" textFill="WHITE">
+   <Label layoutX="37.0" layoutY="187.0" prefHeight="32.0" prefWidth="149.0" style="-fx-background-color: green;" text="Date" textFill="WHITE">
       <font>
          <Font size="22.0" />
       </font>
@@ -39,21 +39,22 @@
          <Font size="22.0" />
       </font>
    </Label>
-   <DatePicker fx:id="meetingTimeAndDateDatepicker" layoutX="289.0" layoutY="193.0" />
+   <DatePicker fx:id="meetingTimeAndDateDatepicker" layoutX="288.0" layoutY="187.0" />
    <ComboBox fx:id="employeeIdCombobox" layoutX="288.0" layoutY="97.0" prefWidth="150.0" />
-   <Button layoutX="474.0" layoutY="185.0" mnemonicParsing="false" onAction="#addButton" prefHeight="41.0" prefWidth="103.0" style="-fx-background-color: navy;" text="Add" textFill="WHITE">
+   <Button layoutX="479.0" layoutY="220.0" mnemonicParsing="false" onAction="#addButton" prefHeight="41.0" prefWidth="103.0" style="-fx-background-color: navy;" text="Add" textFill="WHITE">
       <font>
          <Font size="16.0" />
       </font>
    </Button>
-   <TableView layoutX="6.0" layoutY="335.0" prefHeight="200.0" prefWidth="650.0">
+   <TableView fx:id="tableView" layoutX="6.0" layoutY="335.0" prefHeight="200.0" prefWidth="650.0">
      <columns>
-       <TableColumn prefWidth="205.99999523162842" text="Employee Id" />
-       <TableColumn prefWidth="240.6667022705078" text="Meeting Title" />
-         <TableColumn prefWidth="187.33331298828125" text="Time And Date" />
+       <TableColumn fx:id="employeeColumn" prefWidth="152.00002527236938" text="Employee Id" />
+       <TableColumn fx:id="meetingColumn" prefWidth="165.3334197998047" text="Meeting Title" />
+         <TableColumn fx:id="timeandDateColumn" prefWidth="161.33331298828125" text="Time And Date" />
+         <TableColumn fx:id="mobilenumberColumn1" prefWidth="199.99996948242188" text="Mobile Number" />
      </columns>
    </TableView>
-   <Button layoutX="247.0" layoutY="257.0" mnemonicParsing="false" onAction="#callForMeetingButton" prefHeight="41.0" prefWidth="167.0" style="-fx-background-color: navy;" text="Call for Meeting" textFill="WHITE">
+   <Button layoutX="247.0" layoutY="278.0" mnemonicParsing="false" onAction="#callForMeetingButton" prefHeight="41.0" prefWidth="167.0" style="-fx-background-color: navy;" text="Call for Meeting" textFill="WHITE">
       <font>
          <Font size="16.0" />
       </font>
@@ -63,5 +64,11 @@
          <Font name="System Bold" size="18.0" />
       </font>
    </Button>
+   <Label layoutX="37.0" layoutY="231.0" prefHeight="32.0" prefWidth="149.0" style="-fx-background-color: green;" text="Mobile No" textFill="WHITE">
+      <font>
+         <Font size="22.0" />
+      </font>
+   </Label>
+   <TextField fx:id="mobileNumberTextArea1" layoutX="292.0" layoutY="228.0" />
 
 </AnchorPane>

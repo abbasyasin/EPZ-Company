@@ -47,20 +47,20 @@
    </Label>
    <ComboBox fx:id="departmentCombobox" layoutX="182.0" layoutY="207.0" prefWidth="150.0" />
    <TextField fx:id="auditIDTextField" layoutX="178.0" layoutY="108.0" />
-   <TableView layoutX="2.0" layoutY="338.0" prefHeight="235.0" prefWidth="677.0">
+   <TableView fx:id="tableView" layoutX="2.0" layoutY="338.0" prefHeight="235.0" prefWidth="677.0" style="-fx-background-color: transparent;">
      <columns>
-       <TableColumn prefWidth="163.3333079814911" text="Audit ID" />
-       <TableColumn prefWidth="162.6666717529297" text="Audit Type" />
-         <TableColumn prefWidth="172.66668701171875" text="Department" />
-         <TableColumn prefWidth="179.33328247070312" text="Audit Date" />
+       <TableColumn fx:id="auditIdColumn" prefWidth="163.3333079814911" text="Audit ID" />
+       <TableColumn fx:id="auditTypeColumn" prefWidth="162.6666717529297" text="Audit Type" />
+         <TableColumn fx:id="departmenColumn" prefWidth="172.66668701171875" text="Department" />
+         <TableColumn fx:id="auditDate" prefWidth="179.33328247070312" text="Audit Date" />
      </columns>
    </TableView>
-   <Button layoutX="374.0" layoutY="260.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: navy;" text="Add" textFill="WHITE">
+   <Button layoutX="374.0" layoutY="260.0" mnemonicParsing="false" onAction="#addButton" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: navy;" text="Add" textFill="WHITE">
       <font>
          <Font name="System Bold" size="15.0" />
       </font>
    </Button>
-   <Button layoutX="17.0" layoutY="299.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="655.0" style="-fx-background-color: navy;" text="Show" textFill="WHITE">
+   <Button layoutX="17.0" layoutY="299.0" mnemonicParsing="false" onAction="#showAll" prefHeight="32.0" prefWidth="655.0" style="-fx-background-color: navy;" text="Show" textFill="WHITE">
       <font>
          <Font name="System Bold" size="15.0" />
       </font>

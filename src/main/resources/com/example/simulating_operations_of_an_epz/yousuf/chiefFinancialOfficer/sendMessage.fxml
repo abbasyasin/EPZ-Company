@@ -27,25 +27,26 @@
          <Font name="System Bold" size="13.0" />
       </font>
    </Label>
-   <ComboBox fx:id="EmployeeIdCombobox" layoutX="262.0" layoutY="89.0" prefHeight="33.0" prefWidth="177.0" />
+   <ComboBox fx:id="employeeIdCombobox" layoutX="262.0" layoutY="89.0" prefHeight="33.0" prefWidth="177.0" />
    <Label layoutX="56.0" layoutY="148.0" prefHeight="33.0" prefWidth="142.0" style="-fx-background-color: white;" text="Type Message">
       <font>
          <Font name="System Bold" size="13.0" />
       </font>
    </Label>
    <TextField fx:id="typeMessageTextField" layoutX="262.0" layoutY="148.0" prefHeight="33.0" prefWidth="177.0" />
-   <Button layoutX="451.0" layoutY="152.0" mnemonicParsing="false" onAction="#addbutton" prefHeight="25.0" prefWidth="91.0" style="-fx-background-color: navy;" text="Add" textFill="WHITE">
+   <Button layoutX="458.0" layoutY="197.0" mnemonicParsing="false" onAction="#addbutton" prefHeight="25.0" prefWidth="91.0" style="-fx-background-color: navy;" text="Add" textFill="WHITE">
       <font>
          <Font name="System Bold" size="14.0" />
       </font>
    </Button>
    <TableView fx:id="tableView" layoutX="14.0" layoutY="332.0" prefHeight="200.0" prefWidth="648.0">
      <columns>
-       <TableColumn fx:id="employeeIdColumn" prefWidth="349.33335304260254" text="Employee Id" />
-       <TableColumn fx:id="typeMEssageColumn" prefWidth="297.33331298828125" text="Type Message" />
+       <TableColumn fx:id="employeeIdColumn" prefWidth="143.9999647140503" text="Employee Id" />
+       <TableColumn fx:id="typeMEssageColumn" prefWidth="290.66673278808594" text="Type Message" />
+         <TableColumn fx:id="emailaddressColumn1" prefWidth="240.66665649414062" text="Email Address" />
      </columns>
    </TableView>
-   <Button layoutX="200.0" layoutY="224.0" mnemonicParsing="false" onAction="#addAndShowButton" prefHeight="40.0" prefWidth="275.0" style="-fx-background-color: navy;" text="Send Message And Show" textFill="WHITE">
+   <Button layoutX="200.0" layoutY="268.0" mnemonicParsing="false" onAction="#addAndShowButton" prefHeight="40.0" prefWidth="275.0" style="-fx-background-color: navy;" text="Send Message And Show" textFill="WHITE">
       <font>
          <Font name="System Bold" size="15.0" />
       </font>
@@ -55,5 +56,11 @@
          <Font name="System Bold" size="16.0" />
       </font>
    </Button>
+   <Label layoutX="58.0" layoutY="195.0" prefHeight="33.0" prefWidth="142.0" style="-fx-background-color: white;" text="Email Address">
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font>
+   </Label>
+   <TextField fx:id="emailaddressTextField1" layoutX="263.0" layoutY="195.0" prefHeight="33.0" prefWidth="177.0" />
 
 </AnchorPane>
