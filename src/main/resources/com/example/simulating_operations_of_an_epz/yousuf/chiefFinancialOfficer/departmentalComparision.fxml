@@ -10,18 +10,18 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.yousuf.chiefFinancialOfficer.ProfiteComparisionController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.yousuf.chiefFinancialOfficer.departmentalComparisionController">
     <ImageView fitHeight="576.0" fitWidth="704.0" pickOnBounds="true">
         <image>
             <Image url="@profitYearly.png" />
         </image>
     </ImageView>
-   <Label layoutX="254.0" layoutY="21.0" prefHeight="27.0" prefWidth="195.0" style="-fx-background-color: white;" text="Profit Comparison">
+   <Label layoutX="216.0" layoutY="14.0" prefHeight="30.0" prefWidth="303.0" style="-fx-background-color: white;" text="Department Budget Bar chart">
       <font>
          <Font name="System Bold" size="20.0" />
       </font>
    </Label>
-   <Button layoutX="244.0" layoutY="62.0" mnemonicParsing="false" onAction="#showPiechart" prefHeight="37.0" prefWidth="217.0" text="Show The pie-Chart">
+   <Button layoutX="244.0" layoutY="62.0" mnemonicParsing="false" onAction="#showBarchart" prefHeight="37.0" prefWidth="217.0" text="Show The Bar-Chart">
       <font>
          <Font name="System Bold" size="17.0" />
       </font>
@@ -31,7 +31,7 @@
          <Font name="System Bold" size="17.0" />
       </font>
    </Button>
-   <BarChart fx:id="BudgetChart" layoutX="103.0" layoutY="116.0" style="-fx-background-color: white;" title="Departmental Budget Comparison">
+   <BarChart fx:id="BudgetbarChart" layoutX="103.0" layoutY="116.0" style="-fx-background-color: white;" title="Departmental Budget Comparison">
      <xAxis>
        <CategoryAxis label="Date" side="BOTTOM" fx:id="xAxis" />
      </xAxis>

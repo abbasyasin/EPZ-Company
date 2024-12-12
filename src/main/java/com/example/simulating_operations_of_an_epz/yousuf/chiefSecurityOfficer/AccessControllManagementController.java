@@ -58,7 +58,6 @@ public class AccessControllManagementController {
         areaNameColumn.setCellValueFactory(new PropertyValueFactory<Accesscontroll,String>("AreaName"));
         dateColumn.setCellValueFactory(new PropertyValueFactory<Accesscontroll,LocalDate>("date"));
         loadAllControl();
-
     }
 
     @FXML

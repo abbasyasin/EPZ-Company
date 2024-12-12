@@ -38,9 +38,9 @@
             <Font size="17.0" />
          </font>
       </Button>
-      <Button layoutX="4.0" layoutY="290.0" mnemonicParsing="false" onAction="#profiteComparisionYearly" prefHeight="66.0" prefWidth="187.0" text="Profit Comparison" textFill="#0618e0">
+      <Button layoutX="4.0" layoutY="290.0" mnemonicParsing="false" onAction="#profiteComparisionYearly" prefHeight="66.0" prefWidth="187.0" text="Department budget Comparison" textFill="#0618e0">
          <font>
-            <Font size="17.0" />
+            <Font name="System Bold" size="11.0" />
          </font>
       </Button>
       <Button layoutX="6.0" layoutY="80.0" mnemonicParsing="false" onAction="#updatePolicy" prefHeight="54.0" prefWidth="187.0" text="update Policy " textFill="#0618e0">
