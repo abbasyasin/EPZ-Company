@@ -110,4 +110,14 @@ public class executivechairmanaDashboardController
         window.setScene(scene2);
         window.show();
     }
+
+    @javafx.fxml.FXML
+    public void reviewYearlybudgetOnActionButton(ActionEvent actionEvent) throws IOException {
+        Parent scene2Parent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/example/simulating_operations_of_an_epz/abbas/executiveChairman/goal8_reviewyearlybudget.fxml")));
+        Scene scene2 = new Scene(scene2Parent);
+        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        window.setTitle("Yearly Budget");
+        window.setScene(scene2);
+        window.show();
+    }
 }

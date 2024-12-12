@@ -17,7 +17,7 @@ import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Objects;
 
-public class Goal7bReviewincedentreports
+public class Goal7bReviewincedentreportsController
 {
     @javafx.fxml.FXML
     private TableColumn<RemarksOfIncidentReport,Integer> remarksICol;
