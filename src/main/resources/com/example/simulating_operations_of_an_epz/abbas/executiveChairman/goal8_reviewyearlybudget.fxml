@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="563.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.executiveChairman.Goal8ReviewyearlybudgetController">
+   <children>
+      <Label alignment="CENTER" layoutX="1.0" layoutY="-2.0" prefHeight="53.0" prefWidth="676.0" style="-fx-font-size: 18; -fx-background-color: yellow; -fx-font-weight: bold;" text="Review Yearly Budget Allocation" />
+      <Label layoutX="41.0" layoutY="231.0" text="Select a Category:" />
+      <ComboBox fx:id="CategoryComboBox" layoutX="153.0" layoutY="227.0" prefWidth="150.0" />
+      <Label layoutX="82.0" layoutY="299.0" text="Remarks:" />
+      <TextArea fx:id="yearlyBudgetRemarksTextfield" layoutX="153.0" layoutY="274.0" prefHeight="66.0" prefWidth="200.0" />
+      <Button layoutX="262.0" layoutY="365.0" mnemonicParsing="false" onAction="#addYearlyBudgetRemark" text="Add Remark" />
+      <Button layoutX="76.0" layoutY="365.0" mnemonicParsing="false" onAction="#goBackOnActionButton" text="Go Back" />
+      <Button layoutX="473.0" layoutY="365.0" mnemonicParsing="false" onAction="#loadAllYealyBudgetRemark" text="Load All Remarks" />
+      <TableView fx:id="budgetRemarkTable" layoutX="1.0" layoutY="401.0" prefHeight="162.0" prefWidth="677.0">
+        <columns>
+          <TableColumn fx:id="budgetRemarkCategoryCol" prefWidth="75.0" text="Category" />
+          <TableColumn fx:id="budgetRemarkPercentageCol" prefWidth="69.5" text="Percentage" />
+            <TableColumn fx:id="budgetRemarkAmmountCol" prefWidth="130.5" text="Estimated Ammount" />
+            <TableColumn fx:id="budgetRemarkYearCol" prefWidth="130.5" text="Year" />
+            <TableColumn fx:id="budgetRemarksDescriptionCol" prefWidth="270.5" text="Remarks" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tableViewDa" layoutY="51.0" prefHeight="170.0" prefWidth="676.0">
+         <columns>
+            <TableColumn fx:id="tableVieCategory" prefWidth="125.33331549167633" text="Category" />
+            <TableColumn fx:id="tableviewPercentageOfBudge" prefWidth="198.00003814697266" text="Percentage of Budget" />
+            <TableColumn fx:id="tableVieAmount" prefWidth="169.33331298828125" text="Estimated Ammount USD" />
+            <TableColumn fx:id="yearColum" prefWidth="169.33331298828125" text="Year" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -137,6 +137,7 @@ public class Goal7ReviewincedentreportsController {
             incedentremarksTextArea.clear();
 
 
+
         }catch(IOException ex){
             Logger.getLogger(Goal7ReviewincedentreportsController.class.getName()).log(Level.SEVERE, null, ex);
         }finally{

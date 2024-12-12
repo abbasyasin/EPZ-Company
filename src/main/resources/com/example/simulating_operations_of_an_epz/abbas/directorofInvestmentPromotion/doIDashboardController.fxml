@@ -47,12 +47,12 @@
             <Font size="17.0" />
          </font>
       </Button>
-      <Button layoutX="14.0" layoutY="475.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="187.0" text="Yearly Budget" textFill="#0618e0fa">
+      <Button layoutX="14.0" layoutY="475.0" mnemonicParsing="false" onAction="#manageInvestmentProposalsOnActionButton" prefHeight="54.0" prefWidth="243.0" text="Manage Investment Proposal" textFill="#0618e0fa">
          <font>
             <Font size="17.0" />
          </font>
       </Button>
-      <Button layoutX="14.0" layoutY="539.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="187.0" text="Yearly Budget" textFill="#0618e0fa">
+      <Button layoutX="14.0" layoutY="539.0" mnemonicParsing="false" onAction="#evaluateInvestorperformanceOnActionButton" prefHeight="54.0" prefWidth="251.0" text="Evaluate Investor perfromance" textFill="#0618e0fa">
          <font>
             <Font size="17.0" />
          </font>
@@ -83,5 +83,10 @@
             </LinearGradient>
          </textFill>
       </Label>
+      <Button layoutX="271.0" layoutY="475.0" mnemonicParsing="false" onAction="#dummyInvestmentProposalOnActionButton" prefHeight="54.0" prefWidth="243.0" text="Dummy Investment Proposal" textFill="#0618e0fa">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
