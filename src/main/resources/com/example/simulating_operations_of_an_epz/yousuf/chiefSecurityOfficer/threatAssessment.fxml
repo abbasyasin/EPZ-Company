@@ -3,6 +3,8 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -49,15 +51,23 @@
       </font>
    </Label>
    <TextField fx:id="descriptionTextField" layoutX="187.0" layoutY="258.0" />
-   <Button layoutX="353.0" layoutY="254.0" mnemonicParsing="false" onAction="#addbutton" prefHeight="29.0" prefWidth="107.0" style="-fx-background-color: navy;" text="Add" textFill="WHITE">
+   <Button layoutX="363.0" layoutY="253.0" mnemonicParsing="false" onAction="#addbutton" prefHeight="18.0" prefWidth="107.0" style="-fx-background-color: navy;" text="Add" textFill="WHITE">
       <font>
          <Font name="System Bold" size="16.0" />
       </font>
    </Button>
-   <Button layoutX="123.0" layoutY="318.0" mnemonicParsing="false" onAction="#saveReportButton" prefHeight="36.0" prefWidth="329.0" style="-fx-background-color: navy;" text="Save Report" textFill="WHITE">
+   <Button layoutX="175.0" layoutY="298.0" mnemonicParsing="false" onAction="#saveReportButton" prefHeight="36.0" prefWidth="185.0" style="-fx-background-color: navy;" text="Show All" textFill="WHITE">
       <font>
          <Font name="System Bold" size="16.0" />
       </font>
    </Button>
+   <TableView fx:id="tableView" layoutX="7.0" layoutY="350.0" prefHeight="200.0" prefWidth="664.0" style="-fx-background-color: transparent;">
+     <columns>
+       <TableColumn fx:id="ThreatIdcolumn" prefWidth="160.66665172576904" text="Theat Id" />
+       <TableColumn fx:id="threatTypeColumn" prefWidth="166.0000457763672" text="Theat type" />
+         <TableColumn fx:id="riskLavelcolumn" prefWidth="164.66668701171875" text="Risk Lavel" />
+         <TableColumn fx:id="describtionColumn" prefWidth="172.00003051757812" text="Describtion" />
+     </columns>
+   </TableView>
 
 </AnchorPane>

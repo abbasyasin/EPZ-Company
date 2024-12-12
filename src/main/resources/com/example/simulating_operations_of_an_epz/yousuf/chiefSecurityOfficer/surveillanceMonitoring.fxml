@@ -3,6 +3,8 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -36,14 +38,13 @@
          <Font size="18.0" />
       </font>
    </Label>
-   <ComboBox fx:id="areamonioredcombobox" layoutX="178.0" layoutY="138.0" prefWidth="150.0" />
    <ComboBox fx:id="livefieldStatusCombobox" layoutX="178.0" layoutY="187.0" prefWidth="150.0" />
-   <Button layoutX="221.0" layoutY="222.0" mnemonicParsing="false" onAction="#addButton" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: navy;" text="Add" textFill="WHITE">
+   <Button layoutX="243.0" layoutY="226.0" mnemonicParsing="false" onAction="#addButton" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: navy;" text="Add" textFill="WHITE">
       <font>
          <Font name="System Bold" size="14.0" />
       </font>
    </Button>
-   <Button layoutX="57.0" layoutY="266.0" mnemonicParsing="false" onAction="#reportedFileButton" prefHeight="29.0" prefWidth="297.0" style="-fx-background-color: navy;" text="Reported File" textFill="WHITE">
+   <Button layoutX="7.0" layoutY="228.0" mnemonicParsing="false" onAction="#reportedFileButton" prefHeight="29.0" prefWidth="115.0" style="-fx-background-color: navy;" text="Reported File" textFill="WHITE">
       <font>
          <Font name="System Bold" size="14.0" />
       </font>
@@ -53,5 +54,18 @@
          <Font name="System Bold" size="15.0" />
       </font>
    </Button>
+   <Button layoutX="142.0" layoutY="226.0" mnemonicParsing="false" onAction="#showAllButton" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: navy;" text="Show All" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Button>
+   <TableView fx:id="tableView" layoutX="2.0" layoutY="307.0" prefHeight="243.0" prefWidth="677.0" style="-fx-background-color: transparent;">
+     <columns>
+       <TableColumn fx:id="cameraifColumn" prefWidth="247.99999475479126" text="Camera Id" />
+       <TableColumn fx:id="areaMonitoredColumn" prefWidth="245.3333282470703" text="Area Monitored" />
+         <TableColumn fx:id="liveStatusColumn" prefWidth="180.66659545898438" text="Live  Status" />
+     </columns>
+   </TableView>
+   <TextField fx:id="areaTextField1" layoutX="178.0" layoutY="138.0" />
 
 </AnchorPane>

@@ -140,6 +140,7 @@ public class EmergencyRsponseController {
         Numbers temp=new Numbers(fireServiceNumber,emergencyNumber,dutyOfficer,chairman,policeNumber);
         number.add(temp);
         Numbers num = number.get(0);
+
         Alert a = new Alert(Alert.AlertType.INFORMATION);
         a.setTitle("Emergency Information");
         a.setHeaderText("Emergency Numbers");
