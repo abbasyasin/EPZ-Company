@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.simulating_operations_of_an_epz.nibir.environmentalandSafetyOfficer.eNsOfficerDasboardcontroller"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.nibir.environmentalandSafetyOfficer.eNsOfficerDasboardcontroller">
+   <children>
+      <Label layoutX="221.0" layoutY="35.0" text="Environmental and Safety Officer" textFill="#eb0a0a">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="52.0" layoutY="96.0" mnemonicParsing="false" onAction="#conductImpactAssessmentButtonOncilick" text="Conduct Impact Assessment" />
+      <Button layoutX="52.0" layoutY="143.0" mnemonicParsing="false" onAction="#reportIncidentButtonOnCilick" text="Report Incident" />
+      <Button layoutX="52.0" layoutY="188.0" mnemonicParsing="false" onAction="#monitorWasteManagementButtononCllick" text="Monitor Waste Management" />
+      <Button layoutX="52.0" layoutY="228.0" mnemonicParsing="false" onAction="#conductSafetyInspectionButtonOnClick" text="Conduct Safety Inspection" />
+      <Button layoutX="333.0" layoutY="96.0" mnemonicParsing="false" onAction="#createEmergencyPlanButtononClick" text="Create Emergency Plan" />
+      <Button layoutX="333.0" layoutY="143.0" mnemonicParsing="false" onAction="#monitorAirQualityButtonOnCilick" text="Monitor Air Quality" />
+      <Button layoutX="333.0" layoutY="182.0" mnemonicParsing="false" onAction="#generateAnnualReportButtonOnClick" text="Generate Annual Report" />
+      <Button layoutX="333.0" layoutY="228.0" mnemonicParsing="false" onAction="#scheduleTrainingButtonOnClick" text="Schedule Training" />
+      <Button layoutX="258.0" layoutY="318.0" mnemonicParsing="false" onAction="#logoutButtononClick" text="logout" />
+   </children>
 </AnchorPane>

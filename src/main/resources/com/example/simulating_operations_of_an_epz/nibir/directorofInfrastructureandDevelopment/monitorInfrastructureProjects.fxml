@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.nibir.directorofInfrastructureandDevelopment.MonitorInfrastructureProjectsController">
+   <children>
+      <Label layoutX="238.0" layoutY="46.0" text="Monitor Infrastructure Projects" />
+      <Label layoutX="48.0" layoutY="106.0" text="Project ID" />
+      <Label layoutX="45.0" layoutY="133.0" text="Project Name" />
+      <Label layoutX="58.0" layoutY="158.0" text="Status" />
+      <Label layoutX="48.0" layoutY="192.0" text="Update Date" />
+      <DatePicker fx:id="updateDateDP" layoutX="133.0" layoutY="188.0" />
+      <ComboBox fx:id="statusComboBox" layoutX="133.0" layoutY="154.0" prefWidth="150.0" />
+      <TextField fx:id="projectNametextField" layoutX="134.0" layoutY="129.0" />
+      <TextField fx:id="projectIDTextFiield" layoutX="134.0" layoutY="102.0" />
+      <TableView fx:id="DatatableView" layoutY="244.0" prefHeight="95.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="projectIDTableColm" prefWidth="160.0" text="Project ID" />
+          <TableColumn fx:id="projectNameTableColm" prefWidth="136.0" text="Project Name" />
+            <TableColumn fx:id="statustableColam" prefWidth="134.0" text="Status" />
+            <TableColumn fx:id="updateDateTableColam" prefWidth="169.0" text="Update Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="335.0" layoutY="188.0" mnemonicParsing="false" onAction="#deleteButtonONClick" text="delete" />
+      <Button layoutX="475.0" layoutY="351.0" mnemonicParsing="false" onAction="#SubmitButtonOnAction" text="Submit" />
+      <Button layoutX="56.0" layoutY="34.0" mnemonicParsing="false" onAction="#backButtonONClick" text="Back" />
+   </children>
+</AnchorPane>

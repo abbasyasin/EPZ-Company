@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.nibir.directorofInfrastructureandDevelopment.ConductFeasibilityStudyController">
+   <children>
+      <Label layoutX="223.0" layoutY="33.0" text="Conduct Feasibility Study" />
+      <TextField fx:id="projectscopeTextFileld" layoutX="149.0" layoutY="99.0" />
+      <Label layoutX="54.0" layoutY="103.0" text="Project's scope" />
+      <Label layoutX="61.0" layoutY="130.0" text="Budget" />
+      <TextField fx:id="BudgetTexTfield" layoutX="151.0" layoutY="126.0" />
+      <Label layoutX="69.0" layoutY="159.0" text="Timeline" />
+      <Button layoutX="309.0" layoutY="155.0" mnemonicParsing="false" onAction="#SaveFeasibilityButtonOnClick" text="Save Feasibility" />
+      <Button layoutX="436.0" layoutY="155.0" mnemonicParsing="false" onAction="#notifyStakeHoldersButtonOnClick" text="Notify Stakeholders" />
+      <Button layoutX="66.0" layoutY="38.0" mnemonicParsing="false" onAction="#BackButtonOnClick" text="Back" />
+      <TextField fx:id="TimelineTextField" layoutX="151.0" layoutY="155.0" />
+      <TableView fx:id="DataTableView" layoutX="123.0" layoutY="210.0" prefHeight="200.0" prefWidth="367.0">
+        <columns>
+          <TableColumn fx:id="projecscopeTableColam" prefWidth="106.0" text="Project's scope" />
+          <TableColumn fx:id="TableBudgetColam" prefWidth="149.0" text="Budget" />
+            <TableColumn fx:id="timelineColm" prefWidth="112.0" text="Timeline" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

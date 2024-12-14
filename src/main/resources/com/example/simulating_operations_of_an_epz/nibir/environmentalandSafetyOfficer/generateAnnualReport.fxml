@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.nibir.environmentalandSafetyOfficer.GenerateAnnualReportcontroller">
+   <children>
+      <Label layoutX="256.0" layoutY="62.0" text="Generate Annual Report" />
+      <Label layoutX="79.0" layoutY="120.0" text="Safety inspections" />
+      <Label layoutX="79.0" layoutY="157.0" text="Incidents" />
+      <Button layoutX="53.0" layoutY="58.0" mnemonicParsing="false" onAction="#backButtonOnClick" text="Back" />
+      <Button layoutX="364.0" layoutY="188.0" mnemonicParsing="false" onAction="#submitReportButtonOnClick" text="Submit Report" />
+      <TextField fx:id="safetyinspectionsTextfield" layoutX="192.0" layoutY="116.0" />
+      <TextField fx:id="incidentsTextFileld" layoutX="192.0" layoutY="153.0" />
+      <TextField fx:id="recommendationsTextField" layoutX="192.0" layoutY="188.0" />
+      <Label layoutX="74.0" layoutY="192.0" text="recommendations" />
+      <TableView fx:id="DataViewTable" layoutX="53.0" layoutY="238.0" prefHeight="133.0" prefWidth="457.0">
+        <columns>
+          <TableColumn fx:id="SafetyinspectionsTableColumn" prefWidth="158.0" text="Safety inspections" />
+          <TableColumn fx:id="IncidentsTableColm" prefWidth="135.0" text="Incidents" />
+            <TableColumn fx:id="recommendationsTableColm" prefWidth="163.0" text="recommendations" />
+        </columns>
+      </TableView>
+      <Button layoutX="484.0" layoutY="188.0" mnemonicParsing="false" onAction="#DeleleButtonOnClick" text="Delete" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.nibir.directorofInfrastructureandDevelopment.ProposeFutureProjects">
+   <children>
+      <Label layoutX="228.0" layoutY="31.0" text="Propose Future Projects" />
+      <Label layoutX="54.0" layoutY="109.0" text="Project growth" />
+      <Button layoutX="30.0" layoutY="36.0" mnemonicParsing="false" onAction="#BackButtonOnClick" text="Back" />
+      <TextArea fx:id="DataTeXtarea" layoutX="100.0" layoutY="200.0" prefHeight="99.0" prefWidth="200.0" />
+      <TextField fx:id="ProjectgrowthTextField" layoutX="154.0" layoutY="105.0" />
+      <TextField fx:id="demandTextField" layoutX="154.0" layoutY="137.0" />
+      <Label layoutX="84.0" layoutY="141.0" text="Demand" />
+      <Button layoutX="318.0" layoutY="266.0" mnemonicParsing="false" onAction="#submitProposalButtonOnclick" text="Submit Proposal" />
+   </children>
+</AnchorPane>
