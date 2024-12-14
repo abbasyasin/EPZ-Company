@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.rathna.dBEnterpriseService.DobedashbordController">
+   <children>
+      <Label layoutX="21.0" layoutY="23.0" text="Director of Business and Enterprise Services Dashboard" textFill="#1f67bf">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button defaultButton="true" layoutX="32.0" layoutY="84.0" mnemonicParsing="false" onAction="#requestUtilityServicesButtonOnClick" prefHeight="40.0" prefWidth="200.0" text="Request Utility Services" textFill="#0d63ee">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button defaultButton="true" layoutX="32.0" layoutY="138.0" mnemonicParsing="false" onAction="#assistDocumentRequestsButtonOnClick" prefHeight="40.0" prefWidth="200.0" text="Assist with Document Requests" textFill="#0d63ee">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button defaultButton="true" layoutX="34.0" layoutY="239.0" mnemonicParsing="false" onAction="#approveServiceRequestsButtonOnClick" prefHeight="40.0" prefWidth="200.0" text="Approve Service Requests" textFill="#0d63ee">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button defaultButton="true" layoutX="341.0" layoutY="84.0" mnemonicParsing="false" onAction="#newUtilityProjectButtonOnClick" prefHeight="40.0" prefWidth="200.0" text="New Utility Project" textFill="#0d63ee">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button defaultButton="true" layoutX="344.0" layoutY="138.0" mnemonicParsing="false" onAction="#generateReportButtonOnClick" prefHeight="40.0" prefWidth="200.0" text="Generate Report" textFill="#0d63ee">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button defaultButton="true" layoutX="344.0" layoutY="189.0" mnemonicParsing="false" onAction="#resourceAllocationButtonOnClick" prefHeight="40.0" prefWidth="200.0" text="Resource Allocation" textFill="#0d63ee">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button defaultButton="true" layoutX="345.0" layoutY="239.0" mnemonicParsing="false" onAction="#viewComplaintsButtonOnClick" prefHeight="40.0" prefWidth="200.0" text="View Complaints" textFill="#0d63ee">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button defaultButton="true" layoutX="32.0" layoutY="189.0" mnemonicParsing="false" onAction="#manageUtilityConsumptionButtonOnClick" prefHeight="40.0" prefWidth="200.0" text="Manage Utility Consumption" textFill="#0d63ee">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button defaultButton="true" layoutX="515.0" layoutY="344.0" mnemonicParsing="false" onAction="#logOutButtonOnClick" prefHeight="26.0" prefWidth="64.0" text="Log out" textFill="#1167e8" />
+   </children>
+</AnchorPane>
