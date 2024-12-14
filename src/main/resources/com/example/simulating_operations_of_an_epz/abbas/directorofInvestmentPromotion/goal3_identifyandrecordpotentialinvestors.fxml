@@ -8,9 +8,9 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.directorofInvestmentPromotion.Goal3IdentifyandrecordpotentialinvestorsController">
+<AnchorPane prefHeight="400.0" prefWidth="901.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.directorofInvestmentPromotion.Goal3IdentifyandrecordpotentialinvestorsController">
    <children>
-      <Label alignment="CENTER" prefHeight="55.0" prefWidth="602.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="Identify and Record Potential Investors" />
+      <Label alignment="CENTER" prefHeight="55.0" prefWidth="902.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="Identify and Record Potential Investors" />
       <Label layoutX="31.0" layoutY="67.0" text="Investor Name:" />
       <TextField fx:id="investorNameField" layoutX="128.0" layoutY="63.0" />
       <Label layoutX="31.0" layoutY="106.0" text="Organization:" />
@@ -21,13 +21,13 @@
       <TextField fx:id="ContactInfoField" layoutX="431.0" layoutY="102.0" />
       <Button layoutX="67.0" layoutY="142.0" mnemonicParsing="false" onAction="#goBackOnActionButton" text="Go Back" />
       <Button layoutX="235.0" layoutY="142.0" mnemonicParsing="false" onAction="#AddPotentialInvestorActionButton" text="Add Investor" />
-      <Button layoutX="422.0" layoutY="142.0" mnemonicParsing="false" onAction="#showAllPotentialInvestorButton" text="Show All Potential Invesotrs" />
-      <TableView fx:id="potentialInvestorTable" layoutX="1.0" layoutY="194.0" prefHeight="206.0" prefWidth="602.0">
+      <Button layoutX="422.0" layoutY="142.0" mnemonicParsing="false" onAction="#showAllPotentialInvestorButton" text="Show All Potential Investors" />
+      <TableView fx:id="potentialInvestorTable" layoutX="1.0" layoutY="194.0" prefHeight="206.0" prefWidth="901.0">
         <columns>
-          <TableColumn fx:id="investorNameCol" prefWidth="107.5" text="Name" />
-          <TableColumn fx:id="orgCol" prefWidth="153.5" text="Organization" />
-            <TableColumn fx:id="investmentInterestcol" prefWidth="140.0" text="Investment Interest" />
-            <TableColumn fx:id="contactCol" prefWidth="200.0" text="Contact Info" />
+          <TableColumn fx:id="investorNameCol" prefWidth="230.0" text="Name" />
+          <TableColumn fx:id="orgCol" prefWidth="181.0" text="Organization" />
+            <TableColumn fx:id="investmentInterestcol" prefWidth="317.5" text="Investment Interest" />
+            <TableColumn fx:id="contactCol" prefWidth="171.5" text="Contact Info" />
         </columns>
       </TableView>
    </children>

@@ -8,31 +8,31 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="548.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.executiveChairman.Goal7ReviewincedentreportsController">
+<AnchorPane prefHeight="548.0" prefWidth="797.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.executiveChairman.Goal7ReviewincedentreportsController">
    <children>
       <Label layoutX="55.0" layoutY="233.0" text="Select An Incedent ID:" />
       <ComboBox fx:id="reportIdComboBox" layoutX="202.0" layoutY="229.0" prefHeight="25.0" prefWidth="200.0" />
       <Button layoutX="290.0" layoutY="362.0" mnemonicParsing="false" onAction="#generateReportOnActionButton" text="genarate Remarks" />
-      <TableView fx:id="remarksTable" layoutX="-4.0" layoutY="401.0" prefHeight="147.0" prefWidth="708.0">
+      <TableView fx:id="remarksTable" layoutX="-4.0" layoutY="401.0" prefHeight="147.0" prefWidth="798.0">
         <columns>
           <TableColumn fx:id="remarksIdCol" prefWidth="75.0" text="Incedent ID" />
-          <TableColumn fx:id="remarksTypeCol" prefWidth="91.5" text="Incendent Type" />
-            <TableColumn fx:id="remarksdateCol" prefWidth="66.0" text="Date" />
-            <TableColumn fx:id="remarksReportedByCol" prefWidth="78.0" text="Reported by" />
-            <TableColumn fx:id="remarkdescriptionCol" prefWidth="396.5" text="Remarks" />
+          <TableColumn fx:id="remarksTypeCol" prefWidth="127.5" text="Incendent Type" />
+            <TableColumn fx:id="remarksdateCol" prefWidth="106.5" text="Date" />
+            <TableColumn fx:id="remarksReportedByCol" prefWidth="106.0" text="Reported by" />
+            <TableColumn fx:id="remarkdescriptionCol" prefWidth="381.5" text="Remarks" />
         </columns>
       </TableView>
       <Label layoutX="124.0" layoutY="287.0" text="Remarks:" />
       <TextArea fx:id="incedentremarksTextArea" layoutX="202.0" layoutY="274.0" prefHeight="77.0" prefWidth="200.0" />
-      <TableView fx:id="tablevie" layoutX="-1.0" layoutY="58.0" prefHeight="156.0" prefWidth="700.0">
+      <TableView fx:id="tablevie" layoutX="-1.0" layoutY="58.0" prefHeight="156.0" prefWidth="797.0">
          <columns>
             <TableColumn fx:id="incidentIdColum" prefWidth="171.3333077430725" text="Incident Id" />
-            <TableColumn fx:id="incidentTypecolum" prefWidth="154.00001525878906" text="Incident Type" />
-            <TableColumn fx:id="datecolum" prefWidth="174.0" text="Date" />
-            <TableColumn fx:id="reportedColum" prefWidth="198.0" text="Reported By" />
+            <TableColumn fx:id="incidentTypecolum" prefWidth="254.5" text="Incident Type" />
+            <TableColumn fx:id="datecolum" prefWidth="131.0" text="Date" />
+            <TableColumn fx:id="reportedColum" prefWidth="141.0" text="Reported By" />
          </columns>
       </TableView>
-      <Label alignment="CENTER" layoutX="1.0" layoutY="-1.0" prefHeight="60.0" prefWidth="700.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="Review Incedent reports" />
+      <Label alignment="CENTER" layoutX="1.0" layoutY="-1.0" prefHeight="60.0" prefWidth="797.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="Review Incedent reports" />
       <Button layoutX="87.0" layoutY="362.0" mnemonicParsing="false" onAction="#goBackOnActionButton" text="Go Back" />
       <Button layoutX="500.0" layoutY="362.0" mnemonicParsing="false" onAction="#showAllreportsOnActionButton" text="Show All Reviewed Incedents" />
    </children>

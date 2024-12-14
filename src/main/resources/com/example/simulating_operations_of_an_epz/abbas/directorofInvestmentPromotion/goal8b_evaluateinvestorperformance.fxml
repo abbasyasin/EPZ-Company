@@ -6,19 +6,18 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.directorofInvestmentPromotion.Goal8bEvaluateinvestorperformanceController">
+<AnchorPane prefHeight="400.0" prefWidth="940.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.directorofInvestmentPromotion.Goal8bEvaluateinvestorperformanceController">
    <children>
-      <TableView fx:id="evaluateTable" layoutY="55.0" prefHeight="158.0" prefWidth="715.0">
+      <TableView fx:id="evaluateTable" layoutY="55.0" prefHeight="158.0" prefWidth="940.0">
          <columns>
-            <TableColumn fx:id="aTitleCo" prefWidth="127.5" text="Title" />
-            <TableColumn fx:id="ammountCo" prefWidth="100.5" text="Ammount" />
-            <TableColumn fx:id="nameCo" prefWidth="142.0" text="Company Name" />
-            <TableColumn fx:id="performanceRatingCol" prefWidth="344.0" text="Perfomance Rating" />
+            <TableColumn fx:id="aTitleCo" prefWidth="356.0" text="Title" />
+            <TableColumn fx:id="ammountCo" prefWidth="158.5" text="Ammount" />
+            <TableColumn fx:id="nameCo" prefWidth="239.5" text="Company Name" />
+            <TableColumn fx:id="performanceRatingCol" prefWidth="185.0" text="Perfomance Rating" />
          </columns>
       </TableView>
-      <Label alignment="CENTER" prefHeight="55.0" prefWidth="715.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="Evaluate Investor Performance Dashboard" />
+      <Label alignment="CENTER" prefHeight="55.0" prefWidth="940.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="Evaluate Investor Performance Dashboard" />
       <Button layoutX="119.0" layoutY="246.0" mnemonicParsing="false" onAction="#GoBackOnActionButton" text="Go Back" />
-      <Button layoutX="498.0" layoutY="246.0" mnemonicParsing="false" onAction="#deleteAEvaluaitonOnActionButton" text="delete a evaluation" />
+      <Button layoutX="734.0" layoutY="246.0" mnemonicParsing="false" onAction="#deleteAEvaluaitonOnActionButton" text="delete a evaluation" />
    </children>
 </AnchorPane>

@@ -6,19 +6,18 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.directorofInvestmentPromotion.Goal3bIdentifyandrecordpotentialinvestors">
+<AnchorPane prefHeight="400.0" prefWidth="948.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.directorofInvestmentPromotion.Goal3bIdentifyandrecordpotentialinvestors">
    <children>
-      <TableView fx:id="potentialInvestoTable" layoutY="64.0" prefHeight="206.0" prefWidth="602.0">
+      <TableView fx:id="potentialInvestoTable" layoutY="64.0" prefHeight="206.0" prefWidth="948.0">
          <columns>
-            <TableColumn fx:id="investorNamCol" prefWidth="107.5" text="Name" />
-            <TableColumn fx:id="orCol" prefWidth="153.5" text="Organization" />
-            <TableColumn fx:id="investmentInterescol" prefWidth="140.0" text="Investment Interest" />
-            <TableColumn fx:id="contacCol" prefWidth="200.0" text="Contact Info" />
+            <TableColumn fx:id="investorNamCol" prefWidth="211.5" text="Name" />
+            <TableColumn fx:id="orCol" prefWidth="207.0" text="Organization" />
+            <TableColumn fx:id="investmentInterescol" prefWidth="351.0" text="Investment Interest" />
+            <TableColumn fx:id="contacCol" prefWidth="177.5" text="Contact Info" />
          </columns>
       </TableView>
-      <Label alignment="CENTER" prefHeight="64.0" prefWidth="602.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="Show All Potential Investors" />
+      <Label alignment="CENTER" prefHeight="64.0" prefWidth="948.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="Show All Potential Investors" />
       <Button layoutX="79.0" layoutY="294.0" mnemonicParsing="false" onAction="#goBackOnActionButton" text="Go back" />
-      <Button layoutX="364.0" layoutY="294.0" mnemonicParsing="false" onAction="#deletePotentialInvestorInfoOnActionButton" text="Delete a Potential Investor Info" />
+      <Button layoutX="516.0" layoutY="294.0" mnemonicParsing="false" onAction="#deletePotentialInvestorInfoOnActionButton" text="Delete a Potential Investor Info" />
    </children>
 </AnchorPane>

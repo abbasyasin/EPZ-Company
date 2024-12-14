@@ -9,7 +9,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.executiveChairman.Goal2ChairmannotesController">
+<AnchorPane prefHeight="498.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.executiveChairman.Goal2ChairmannotesController">
    <children>
       <Label layoutX="57.0" layoutY="93.0" text="Title:" />
       <TextField fx:id="titleTextField" layoutX="120.0" layoutY="89.0" />
@@ -18,13 +18,13 @@
       <Label layoutX="349.0" layoutY="95.0" text="Category:" />
       <ComboBox fx:id="categorybox" layoutX="418.0" layoutY="92.0" prefWidth="150.0" />
       <Label layoutX="335.0" layoutY="144.0" text="Date:" />
-      <Label layoutX="-1.0" layoutY="-1.0" prefHeight="65.0" prefWidth="600.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="                                          Manage Chairman Notes" />
-      <TableView fx:id="noteTable" layoutX="-1.0" layoutY="271.0" prefHeight="227.0" prefWidth="600.0">
+      <Label layoutX="-1.0" layoutY="-1.0" prefHeight="65.0" prefWidth="737.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="                                          Manage Chairman Notes" />
+      <TableView fx:id="noteTable" layoutX="-1.0" layoutY="271.0" prefHeight="227.0" prefWidth="737.0">
         <columns>
-          <TableColumn fx:id="titlecol" prefWidth="114.5" text="Title" />
-          <TableColumn fx:id="categorycol" prefWidth="137.5" text="Category" />
-            <TableColumn fx:id="datecol" prefWidth="127.0" text="Date" />
-            <TableColumn fx:id="attachmentcol" prefWidth="220.0" text="Attachment" />
+          <TableColumn fx:id="titlecol" prefWidth="257.5" text="Title" />
+          <TableColumn fx:id="categorycol" prefWidth="163.0" text="Category" />
+            <TableColumn fx:id="datecol" prefWidth="145.0" text="Date" />
+            <TableColumn fx:id="attachmentcol" prefWidth="170.5" text="Attachment" />
         </columns>
       </TableView>
       <Button layoutX="35.0" layoutY="214.0" mnemonicParsing="false" onAction="#goBackOnActionButton" text="GoBack" />

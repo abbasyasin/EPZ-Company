@@ -7,31 +7,31 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="493.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.directorofInvestmentPromotion.Goal8EvaluateinvestorperformanceController">
+<AnchorPane prefHeight="493.0" prefWidth="1113.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.directorofInvestmentPromotion.Goal8EvaluateinvestorperformanceController">
    <children>
-      <TableView fx:id="approvalTable" layoutY="55.0" prefHeight="158.0" prefWidth="715.0">
+      <TableView fx:id="approvalTable" layoutY="55.0" prefHeight="158.0" prefWidth="1113.0">
          <columns>
-            <TableColumn fx:id="aTitleCol" prefWidth="127.5" text="Title" />
-            <TableColumn fx:id="ammountCol" prefWidth="100.5" text="Ammount" />
-            <TableColumn fx:id="nameCol" prefWidth="142.0" text="Company Name" />
-            <TableColumn fx:id="docCol" prefWidth="153.5" text="Documnets" />
-            <TableColumn fx:id="approvalCol" prefWidth="190.5" text="Approval" />
+            <TableColumn fx:id="aTitleCol" prefWidth="356.0" text="Title" />
+            <TableColumn fx:id="ammountCol" prefWidth="96.0" text="Ammount" />
+            <TableColumn fx:id="nameCol" prefWidth="246.5" text="Company Name" />
+            <TableColumn fx:id="docCol" prefWidth="278.5" text="Documnets" />
+            <TableColumn fx:id="approvalCol" prefWidth="135.0" text="Approval" />
          </columns>
       </TableView>
-      <Label alignment="CENTER" prefHeight="55.0" prefWidth="715.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="Evaluate Investor Performance Dashboard" />
+      <Label alignment="CENTER" prefHeight="55.0" prefWidth="1113.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="Evaluate Investor Performance Dashboard" />
       <Label layoutX="77.0" layoutY="227.0" text="Performance Rating:" />
       <ComboBox fx:id="performanceRatingComboBox" layoutX="196.0" layoutY="223.0" prefWidth="150.0" />
-      <TableView fx:id="evaluateTable" layoutY="335.0" prefHeight="158.0" prefWidth="715.0">
+      <TableView fx:id="evaluateTable" layoutY="335.0" prefHeight="158.0" prefWidth="1113.0">
          <columns>
-            <TableColumn fx:id="aTitleCo" prefWidth="127.5" text="Title" />
-            <TableColumn fx:id="ammountCo" prefWidth="100.5" text="Ammount" />
-            <TableColumn fx:id="nameCo" prefWidth="142.0" text="Company Name" />
-            <TableColumn fx:id="performanceRatingCol" prefWidth="344.0" text="Perfomance Rating" />
+            <TableColumn fx:id="aTitleCo" prefWidth="347.0" text="Title" />
+            <TableColumn fx:id="ammountCo" prefWidth="198.5" text="Ammount" />
+            <TableColumn fx:id="nameCo" prefWidth="209.5" text="Company Name" />
+            <TableColumn fx:id="performanceRatingCol" prefWidth="227.0" text="Perfomance Rating" />
          </columns>
       </TableView>
       <Button layoutX="94.0" layoutY="290.0" mnemonicParsing="false" onAction="#goBackOnActionButton" text="Go Back" />
       <Button layoutX="310.0" layoutY="290.0" mnemonicParsing="false" onAction="#addEvaluationOnActionButton" text="Add Evaluation" />
-      <Button layoutX="593.0" layoutY="290.0" mnemonicParsing="false" onAction="#showAllEvaluationOnActionButton" text="Show All evaluatons" />
+      <Button layoutX="540.0" layoutY="290.0" mnemonicParsing="false" onAction="#showAllEvaluationOnActionButton" text="Show All evaluatons" />
       <Label layoutX="77.0" layoutY="261.0" text="Select A Investment:" />
       <ComboBox fx:id="investmentNameComboBox" layoutX="196.0" layoutY="257.0" prefWidth="150.0" />
    </children>

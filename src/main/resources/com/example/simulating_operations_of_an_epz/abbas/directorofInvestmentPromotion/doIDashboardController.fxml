@@ -17,37 +17,37 @@
                <Image url="@dipo.jpg" />
            </image>
        </ImageView>
-      <Button layoutX="14.0" layoutY="94.0" mnemonicParsing="false" onAction="#investmentStrategiesOnActionButton" prefHeight="54.0" prefWidth="201.0" text="Investment Strategies" textFill="#0618e0fa">
+      <Button layoutX="14.0" layoutY="94.0" mnemonicParsing="false" onAction="#investmentStrategiesOnActionButton" prefHeight="54.0" prefWidth="251.0" text="Investment Strategies" textFill="#0618e0fa">
          <font>
             <Font size="17.0" />
          </font>
       </Button>
-      <Button layoutX="14.0" layoutY="156.0" mnemonicParsing="false" onAction="#manageMarketingCampaignsOnActionButton" prefHeight="54.0" prefWidth="201.0" text="Marketing Campaigns" textFill="#0618e0fa">
+      <Button layoutX="14.0" layoutY="156.0" mnemonicParsing="false" onAction="#manageMarketingCampaignsOnActionButton" prefHeight="54.0" prefWidth="251.0" text="Marketing Campaigns" textFill="#0618e0fa">
          <font>
             <Font size="17.0" />
          </font>
       </Button>
-      <Button layoutX="14.0" layoutY="219.0" mnemonicParsing="false" onAction="#identifyPotentialInvesotrsOnActionButton" prefHeight="54.0" prefWidth="187.0" text="Potential Investors" textFill="#0618e0fa">
+      <Button layoutX="14.0" layoutY="219.0" mnemonicParsing="false" onAction="#identifyPotentialInvesotrsOnActionButton" prefHeight="54.0" prefWidth="251.0" text="Potential Investors" textFill="#0618e0fa">
          <font>
             <Font size="17.0" />
          </font>
       </Button>
-      <Button layoutX="14.0" layoutY="282.0" mnemonicParsing="false" onAction="#createInvestorEventPlanOnActionButton" prefHeight="54.0" prefWidth="187.0" text="Investor Event Plan" textFill="#0618e0fa">
+      <Button layoutX="14.0" layoutY="282.0" mnemonicParsing="false" onAction="#createInvestorEventPlanOnActionButton" prefHeight="54.0" prefWidth="251.0" text="Investor Event Plan" textFill="#0618e0fa">
          <font>
             <Font size="17.0" />
          </font>
       </Button>
-      <Button layoutX="14.0" layoutY="346.0" mnemonicParsing="false" onAction="#AnalyzeAndRecordMarketTrendsOnActionButton" prefHeight="54.0" prefWidth="187.0" text="Market Trends" textFill="#0618e0fa">
+      <Button layoutX="14.0" layoutY="346.0" mnemonicParsing="false" onAction="#AnalyzeAndRecordMarketTrendsOnActionButton" prefHeight="54.0" prefWidth="251.0" text="Market Trends" textFill="#0618e0fa">
          <font>
             <Font size="17.0" />
          </font>
       </Button>
-      <Button layoutX="14.0" layoutY="411.0" mnemonicParsing="false" onAction="#organizeNetworkingEventForInvestorsOnActionButton" prefHeight="54.0" prefWidth="187.0" text="Networking Event" textFill="#0618e0fa">
+      <Button layoutX="14.0" layoutY="411.0" mnemonicParsing="false" onAction="#organizeNetworkingEventForInvestorsOnActionButton" prefHeight="54.0" prefWidth="251.0" text="Networking Event" textFill="#0618e0fa">
          <font>
             <Font size="17.0" />
          </font>
       </Button>
-      <Button layoutX="14.0" layoutY="475.0" mnemonicParsing="false" onAction="#manageInvestmentProposalsOnActionButton" prefHeight="54.0" prefWidth="243.0" text="Manage Investment Proposal" textFill="#0618e0fa">
+      <Button layoutX="14.0" layoutY="475.0" mnemonicParsing="false" onAction="#manageInvestmentProposalsOnActionButton" prefHeight="54.0" prefWidth="251.0" text="Manage Investment Proposal" textFill="#0618e0fa">
          <font>
             <Font size="17.0" />
          </font>
@@ -83,7 +83,7 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <Button layoutX="271.0" layoutY="475.0" mnemonicParsing="false" onAction="#dummyInvestmentProposalOnActionButton" prefHeight="54.0" prefWidth="243.0" text="Dummy Investment Proposal" textFill="#0618e0fa">
+      <Button fx:id="dummybutton" layoutX="271.0" layoutY="475.0" mnemonicParsing="false" onAction="#dummyInvestmentProposalOnActionButton" prefHeight="54.0" prefWidth="243.0" text="Dummy Investment Proposal" textFill="#0618e0fa">
          <font>
             <Font size="17.0" />
          </font>

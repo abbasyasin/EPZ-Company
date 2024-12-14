@@ -9,9 +9,9 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.directorofInvestmentPromotion.Goal5RecordmarkettrendsController">
+<AnchorPane prefHeight="440.0" prefWidth="992.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.directorofInvestmentPromotion.Goal5RecordmarkettrendsController">
    <children>
-      <Label alignment="CENTER" layoutY="-1.0" prefHeight="60.0" prefWidth="600.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="Analyze Market Trend" />
+      <Label alignment="CENTER" layoutY="-1.0" prefHeight="60.0" prefWidth="992.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="Analyze Market Trend" />
       <Label layoutX="42.0" layoutY="77.0" text="Trend Name:" />
       <TextField fx:id="trendNameTextField" layoutX="119.0" layoutY="73.0" />
       <Label layoutX="42.0" layoutY="116.0" text="Description:" />
@@ -23,12 +23,12 @@
       <Button layoutX="48.0" layoutY="200.0" mnemonicParsing="false" onAction="#goBackOnActionButton" text="Go Back" />
       <Button layoutX="247.0" layoutY="200.0" mnemonicParsing="false" onAction="#addTrendOnActionButton" text="Add Trend" />
       <Button layoutX="451.0" layoutY="200.0" mnemonicParsing="false" onAction="#loadAlltrendsActionButton" text="Load All Trends" />
-      <TableView fx:id="trendTable" layoutY="240.0" prefHeight="200.0" prefWidth="600.0">
+      <TableView fx:id="trendTable" layoutY="240.0" prefHeight="200.0" prefWidth="992.0">
         <columns>
-          <TableColumn fx:id="trendNameCol" prefWidth="142.0" text="Trend Name" />
-          <TableColumn fx:id="affectedsectorCol" prefWidth="102.0" text="Affected Sector" />
-            <TableColumn fx:id="impactLevelCol" prefWidth="82.0" text="Impact Level" />
-            <TableColumn fx:id="trendDescriptionCol" prefWidth="273.0" text="Description" />
+          <TableColumn fx:id="trendNameCol" prefWidth="237.5" text="Trend Name" />
+          <TableColumn fx:id="affectedsectorCol" prefWidth="253.0" text="Affected Sector" />
+            <TableColumn fx:id="impactLevelCol" prefWidth="89.5" text="Impact Level" />
+            <TableColumn fx:id="trendDescriptionCol" prefWidth="297.0" text="Description" />
         </columns>
       </TableView>
    </children>

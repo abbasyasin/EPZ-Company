@@ -6,17 +6,16 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.executiveChairman.Goal7bReviewincedentreportsController">
+<AnchorPane prefHeight="400.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.executiveChairman.Goal7bReviewincedentreportsController">
    <children>
-      <Label alignment="CENTER" prefHeight="60.0" prefWidth="700.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="Show All Reviewed Incedent reports" />
-      <TableView fx:id="remarkTable" layoutY="60.0" prefHeight="147.0" prefWidth="708.0">
+      <Label alignment="CENTER" prefHeight="60.0" prefWidth="780.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="Show All Reviewed Incedent reports" />
+      <TableView fx:id="remarkTable" layoutY="60.0" prefHeight="147.0" prefWidth="780.0">
          <columns>
             <TableColumn fx:id="remarksICol" prefWidth="75.0" text="Incedent ID" />
-            <TableColumn fx:id="remarksTypCol" prefWidth="91.5" text="Incendent Type" />
-            <TableColumn fx:id="remarksdatCol" prefWidth="66.0" text="Date" />
-            <TableColumn fx:id="remarksReportedBCol" prefWidth="78.0" text="Reported by" />
-            <TableColumn fx:id="remarkdescriptioCol" prefWidth="396.5" text="Remarks" />
+            <TableColumn fx:id="remarksTypCol" prefWidth="120.0" text="Incendent Type" />
+            <TableColumn fx:id="remarksdatCol" text="Date" />
+            <TableColumn fx:id="remarksReportedBCol" prefWidth="91.0" text="Reported by" />
+            <TableColumn fx:id="remarkdescriptioCol" prefWidth="412.5" text="Remarks" />
          </columns>
       </TableView>
       <Button layoutX="86.0" layoutY="234.0" mnemonicParsing="false" onAction="#goBackOnActionButton" text="Go Back" />

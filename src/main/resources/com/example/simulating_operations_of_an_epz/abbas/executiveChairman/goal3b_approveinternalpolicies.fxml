@@ -6,17 +6,17 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.executiveChairman.Goal3bApproveinternalpoliciesController">
+<AnchorPane prefHeight="400.0" prefWidth="834.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.executiveChairman.Goal3bApproveinternalpoliciesController">
    <children>
-      <TableView fx:id="policiesTable" layoutY="79.0" prefHeight="210.0" prefWidth="600.0">
+      <TableView fx:id="policiesTable" layoutY="79.0" prefHeight="210.0" prefWidth="834.0">
          <columns>
-            <TableColumn fx:id="policyNameCol" prefWidth="154.0" text="Policy Name" />
-            <TableColumn fx:id="effectiveDateCol" prefWidth="90.0" text="Effective Date" />
-            <TableColumn fx:id="descriptionCol" prefWidth="355.0" text="Description" />
+            <TableColumn fx:id="policyNameCol" prefWidth="266.0" text="Policy Name" />
+            <TableColumn fx:id="effectiveDateCol" prefWidth="122.5" text="Effective Date" />
+            <TableColumn fx:id="descriptionCol" prefWidth="444.5" text="Description" />
          </columns>
       </TableView>
-      <Label alignment="CENTER" layoutY="-1.0" prefHeight="82.0" prefWidth="602.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="Show All Policies" />
+      <Label alignment="CENTER" layoutY="-1.0" prefHeight="82.0" prefWidth="834.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="Show All Policies" />
       <Button layoutX="63.0" layoutY="311.0" mnemonicParsing="false" onAction="#goBackOnActionButton" text="Go Back" />
-      <Button layoutX="374.0" layoutY="311.0" mnemonicParsing="false" onAction="#updatePolicyOnActionButton" text="Delete a policy and update file" />
+      <Button layoutX="551.0" layoutY="311.0" mnemonicParsing="false" onAction="#updatePolicyOnActionButton" text="Delete a policy and update file" />
    </children>
 </AnchorPane>

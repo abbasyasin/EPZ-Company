@@ -6,18 +6,18 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.directorofInvestmentPromotion.Goal5bRecordmarkettrendsController">
+<AnchorPane prefHeight="400.0" prefWidth="1014.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.directorofInvestmentPromotion.Goal5bRecordmarkettrendsController">
    <children>
-      <TableView fx:id="trenTable" layoutY="61.0" prefHeight="200.0" prefWidth="600.0">
+      <TableView fx:id="trenTable" layoutY="61.0" prefHeight="200.0" prefWidth="1014.0">
          <columns>
-            <TableColumn fx:id="trendNamCol" prefWidth="142.0" text="Trend Name" />
-            <TableColumn fx:id="affectedsectoCol" prefWidth="102.0" text="Affected Sector" />
-            <TableColumn fx:id="impactLeveCol" prefWidth="82.0" text="Impact Level" />
-            <TableColumn fx:id="trendDescriptioCol" prefWidth="273.0" text="Description" />
+            <TableColumn fx:id="trendNamCol" prefWidth="225.0" text="Trend Name" />
+            <TableColumn fx:id="affectedsectoCol" minWidth="4.0" prefWidth="289.5" text="Affected Sector" />
+            <TableColumn fx:id="impactLeveCol" prefWidth="103.0" text="Impact Level" />
+            <TableColumn fx:id="trendDescriptioCol" prefWidth="395.5" text="Description" />
          </columns>
       </TableView>
-      <Label alignment="CENTER" prefHeight="60.0" prefWidth="600.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="Show All Market Trend" />
+      <Label alignment="CENTER" prefHeight="60.0" prefWidth="1014.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="Show All Market Trend" />
       <Button layoutX="68.0" layoutY="276.0" mnemonicParsing="false" onAction="#goBackOnActionButton" text="Go Back" />
-      <Button layoutX="428.0" layoutY="276.0" mnemonicParsing="false" onAction="#deleteTrendActionBUtton" text="Delete a Trend" />
+      <Button layoutX="826.0" layoutY="276.0" mnemonicParsing="false" onAction="#deleteTrendActionBUtton" text="Delete a Trend" />
    </children>
 </AnchorPane>
