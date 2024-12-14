@@ -7,11 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
@@ -20,6 +16,7 @@ import java.time.LocalDate;
 import java.util.Objects;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 
 public class AuditAndComplianceController {
 
@@ -59,12 +56,14 @@ public class AuditAndComplianceController {
         auditIdColumn.setCellValueFactory(new PropertyValueFactory<Audit,Integer>("auditId"));
         auditDate.setCellValueFactory(new PropertyValueFactory<Audit,LocalDate>("date"));
         loadAudit();
+
     }
 
     @FXML
     void addButton(ActionEvent event) {
         tableView.getItems().clear();
         int auditId;
+        String auditIdS=auditIDTextField.getText();
         if (auditIDTextField.getText().isEmpty()){
             return;
         }else{
@@ -79,6 +78,10 @@ public class AuditAndComplianceController {
             return;
         }
         LocalDate date=datepicker.getValue();
+        if( auditIdS.isEmpty()|| date == null || auditType.isEmpty() || department.isEmpty()){
+            showAlert("Validation Error","All fields are required");
+            return;
+        }
 
 
         File f= null;
@@ -154,5 +157,11 @@ public class AuditAndComplianceController {
         window.setTitle("Departmental Budget");
         window.setScene(scene2);
         window.show();
+    }
+    private void showAlert(String title, String content) {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle(title);
+        alert.setContentText(content);
+        alert.showAndWait();
     }
 }

@@ -14,12 +14,12 @@
    <children>
       <ImageView fitHeight="600.0" fitWidth="703.0" layoutY="1.0" pickOnBounds="true">
          <image>
-            <Image url="@Epz_BAxkround-JPEG.jpeg" />
+            <Image url="@Epz_BAckround-JPEG.jpeg" />
          </image>
       </ImageView>
       <ImageView fitHeight="64.0" fitWidth="108.0" layoutX="6.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Logo-gozayan.png" />
+            <Image url="@epz_logo.png" />
          </image>
       </ImageView>
       <Label layoutX="294.0" layoutY="126.0" text="Create User" textFill="#300fa6">
@@ -36,7 +36,7 @@
       </Button>
       <ImageView fitHeight="51.0" fitWidth="107.0" layoutX="52.0" layoutY="527.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Logo-gozayan.png" />
+            <Image url="@Epz_BAckround-JPEG.jpeg" />
          </image>
       </ImageView>
       <Line endX="550.4000244140625" layoutX="128.0" layoutY="531.0" startX="-100.0" />
@@ -49,7 +49,7 @@
       <Button layoutX="349.0" layoutY="388.0" mnemonicParsing="false" onAction="#signInButtonOnClicked" style="-fx-background-color: transparent;" text="Sign In" textFill="#2f00ff" underline="true" />
       <ImageView fitHeight="45.0" fitWidth="337.0" layoutX="180.0" layoutY="69.0" pickOnBounds="true">
          <image>
-            <Image url="@Flight-Hotel-Tour.png" />
+            <Image url="@epz_logo.png" />
          </image>
       </ImageView>
       <TextField fx:id="signUpPasswordTextField" layoutX="213.0" layoutY="276.0" prefHeight="25.0" prefWidth="242.0" />
