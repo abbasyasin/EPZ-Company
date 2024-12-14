@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="518.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.rathna.company.InvestmentProposalController">
+   <children>
+      <TextField fx:id="investmentTitleTextField" layoutX="130.0" layoutY="98.0" />
+      <Label layoutX="17.0" layoutY="101.0" text="Investment Title" />
+      <Label layoutX="264.0" layoutY="18.0" text="Investment Proposal details">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="136.0" text="Investment Amount" />
+      <Label layoutX="311.0" layoutY="91.0" text="Company Details" />
+      <Label layoutX="306.0" layoutY="125.0" text="Project Description" />
+      <TextField fx:id="investmentTextField" layoutX="130.0" layoutY="132.0" />
+      <TextField fx:id="companyDetailTextField" layoutX="414.0" layoutY="86.0" />
+      <Button layoutX="678.0" layoutY="227.0" mnemonicParsing="false" onAction="#loadTableButtonOnClick" text="Load " />
+      <Label layoutX="20.0" layoutY="175.0" text="Project documents " />
+      <TableView fx:id="documentsTableView" layoutX="11.0" layoutY="275.0" prefHeight="182.0" prefWidth="739.0">
+        <columns>
+          <TableColumn fx:id="proposalNameTableColumn" prefWidth="104.65768909454346" text="Proposal Name" />
+          <TableColumn fx:id="investmentAmountTableColumn" prefWidth="113.84230041503906" text="Investment Amount" />
+            <TableColumn fx:id="companyDetailsTableColumn" prefWidth="104.08389282226562" text="Company Details" />
+            <TableColumn fx:id="projectDescriptionTableColumn" prefWidth="114.34228515625" text="Project Description" />
+            <TableColumn fx:id="investmentTitleTableColumn" prefWidth="104.65768909454346" text="Investment Title" />
+            <TableColumn fx:id="documentTableViewCol" prefWidth="114.5" text="Project Documents " />
+            <TableColumn fx:id="proposalDateColumn" prefWidth="85.0" text="Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="619.0" layoutY="472.0" mnemonicParsing="false" onAction="#SubmitButtonOnClick" prefHeight="32.0" prefWidth="107.0" text="Submit Proposal" />
+      <ComboBox fx:id="projectDocumentscomboBox" layoutX="144.0" layoutY="171.0" prefWidth="150.0" />
+      <Button layoutX="20.0" layoutY="18.0" mnemonicParsing="false" onAction="#backButtonOnClick" text="Back" />
+      <Label layoutX="27.0" layoutY="218.0" text=" file upload" />
+      <Button layoutX="98.0" layoutY="214.0" mnemonicParsing="false" onAction="#fileUploadButtonOnClick" text="Business PlanFile" />
+      <TextField fx:id="projectDescriptionTextField" layoutX="414.0" layoutY="121.0" prefHeight="107.0" prefWidth="239.0" />
+      <Label layoutX="18.0" layoutY="65.0" text="Proposal Name" />
+      <TextField fx:id="proposalNameTextField" layoutX="129.0" layoutY="61.0" />
+      <Label layoutX="368.0" layoutY="56.0" text="Date" />
+      <DatePicker fx:id="proposalDatePicker" layoutX="410.0" layoutY="53.0" prefHeight="26.0" prefWidth="176.0" />
+   </children>
+</AnchorPane>
