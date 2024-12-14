@@ -6,20 +6,20 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.directorofInvestmentPromotion.Goal1bRecordinvestmentstrategiesController">
+<AnchorPane prefHeight="400.0" prefWidth="1214.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.directorofInvestmentPromotion.Goal1bRecordinvestmentstrategiesController">
    <children>
-      <TableView fx:id="investmentStrategyTable" layoutY="74.0" prefHeight="235.0" prefWidth="654.0">
+      <TableView fx:id="investmentStrategyTable" layoutY="74.0" prefHeight="235.0" prefWidth="1214.0">
          <columns>
-            <TableColumn fx:id="strategyNamCol" prefWidth="92.0" text="Strategy Name" />
-            <TableColumn fx:id="strategyDescriptioCol" prefWidth="146.0" text="Strategy Description" />
-            <TableColumn fx:id="categorCol" prefWidth="116.0" text="Category" />
-            <TableColumn fx:id="datCol" prefWidth="135.0" text="Implementation Date" />
-            <TableColumn fx:id="prioritCol" prefWidth="77.5" text="Priority" />
-            <TableColumn fx:id="highPrioritCol" prefWidth="86.5" text="High Priority" />
+            <TableColumn fx:id="strategyNamCol" prefWidth="244.0" text="Strategy Name" />
+            <TableColumn fx:id="strategyDescriptioCol" prefWidth="488.0" text="Strategy Description" />
+            <TableColumn fx:id="categorCol" prefWidth="156.0" text="Category" />
+            <TableColumn fx:id="datCol" prefWidth="142.0" text="Implementation Date" />
+            <TableColumn fx:id="prioritCol" prefWidth="92.0" text="Priority" />
+            <TableColumn fx:id="highPrioritCol" prefWidth="91.0" text="High Priority" />
          </columns>
       </TableView>
-      <Label alignment="CENTER" layoutX="-1.0" layoutY="-3.0" prefHeight="78.0" prefWidth="654.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="Show All investment Strategies" />
+      <Label alignment="CENTER" layoutX="-1.0" layoutY="-3.0" prefHeight="78.0" prefWidth="1214.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="Show All investment Strategies" />
       <Button layoutX="115.0" layoutY="340.0" mnemonicParsing="false" onAction="#goBackOnActionButton" text="Go back" />
-      <Button layoutX="410.0" layoutY="340.0" mnemonicParsing="false" onAction="#deleteAStrategyOnActionButton" text="Delete a strategy" />
+      <Button layoutX="949.0" layoutY="340.0" mnemonicParsing="false" onAction="#deleteAStrategyOnActionButton" text="Delete a strategy" />
    </children>
 </AnchorPane>

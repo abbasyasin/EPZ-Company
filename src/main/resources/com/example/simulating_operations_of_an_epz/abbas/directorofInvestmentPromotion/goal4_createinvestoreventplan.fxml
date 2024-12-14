@@ -11,9 +11,9 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="495.0" prefWidth="659.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.directorofInvestmentPromotion.Goal4CreateinvestoreventplanController">
+<AnchorPane prefHeight="495.0" prefWidth="1296.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.directorofInvestmentPromotion.Goal4CreateinvestoreventplanController">
    <children>
-      <Label alignment="CENTER" layoutX="1.0" layoutY="-1.0" prefHeight="63.0" prefWidth="687.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="Create Investor Event Plan" />
+      <Label alignment="CENTER" layoutX="1.0" layoutY="-1.0" prefHeight="63.0" prefWidth="1296.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="Create Investor Event Plan" />
       <Label layoutX="32.0" layoutY="76.0" text="Event Name:" />
       <TextField fx:id="evntNameTextField" layoutX="112.0" layoutY="72.0" />
       <Label layoutX="32.0" layoutY="109.0" text="Location:" />
@@ -30,15 +30,15 @@
       <Button layoutX="54.0" layoutY="261.0" mnemonicParsing="false" onAction="#goBackOnActionButton" text="Go Back" />
       <Button layoutX="275.0" layoutY="261.0" mnemonicParsing="false" onAction="#addEventPlanOnActionbutton" text="Add Event Plan" />
       <Button layoutX="499.0" layoutY="261.0" mnemonicParsing="false" onAction="#showAllEventsOnActionButton" text="Show All Event Plans" />
-      <TableView fx:id="eventPlanTable" layoutX="1.0" layoutY="295.0" prefHeight="200.0" prefWidth="687.0">
+      <TableView fx:id="eventPlanTable" layoutX="1.0" layoutY="295.0" prefHeight="200.0" prefWidth="1296.0">
         <columns>
-          <TableColumn fx:id="evntNameCol" prefWidth="75.0" text="Event Name" />
-          <TableColumn fx:id="evntLocCol" prefWidth="89.5" text="Event Location" />
-            <TableColumn fx:id="evntBudgtCol" prefWidth="89.5" text="Event Budget" />
-            <TableColumn fx:id="evntDecriptinCol" prefWidth="156.0" text="Event Description" />
-            <TableColumn fx:id="evntDateCol" prefWidth="81.0" text="Event Date" />
-            <TableColumn fx:id="evntTypeCol" prefWidth="117.5" text="Event Type" />
-            <TableColumn fx:id="evntpublicCol" prefWidth="83.5" text="Public" />
+          <TableColumn fx:id="evntNameCol" prefWidth="239.0" text="Event Name" />
+          <TableColumn fx:id="evntLocCol" prefWidth="207.5" text="Event Location" />
+            <TableColumn fx:id="evntBudgtCol" prefWidth="103.5" text="Event Budget" />
+            <TableColumn fx:id="evntDecriptinCol" prefWidth="476.5" text="Event Description" />
+            <TableColumn fx:id="evntDateCol" prefWidth="100.0" text="Event Date" />
+            <TableColumn fx:id="evntTypeCol" prefWidth="106.0" text="Event Type" />
+            <TableColumn fx:id="evntpublicCol" minWidth="0.0" prefWidth="62.5" text="Public" />
         </columns>
       </TableView>
    </children>

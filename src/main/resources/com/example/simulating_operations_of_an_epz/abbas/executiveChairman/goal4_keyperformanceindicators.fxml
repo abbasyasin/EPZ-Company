@@ -9,10 +9,9 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.executiveChairman.Goal4KeyperformanceindicatorsController">
+<AnchorPane prefHeight="469.0" prefWidth="886.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.executiveChairman.Goal4KeyperformanceindicatorsController">
    <children>
-      <Label alignment="CENTER" layoutY="-1.0" prefHeight="66.0" prefWidth="600.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="Log and Track Key Perfomance Indicators" />
+      <Label alignment="CENTER" layoutY="-1.0" prefHeight="66.0" prefWidth="894.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="Log and Track Key Perfomance Indicators" />
       <Label layoutX="51.0" layoutY="87.0" text="KPI Name:" />
       <TextField fx:id="kpiNameTextField" layoutX="122.0" layoutY="83.0" />
       <Label layoutX="300.0" layoutY="87.0" text="Target Value:" />
@@ -26,13 +25,13 @@
       <Button layoutX="274.0" layoutY="233.0" mnemonicParsing="false" onAction="#addKPIOnActionButton" text="Add KPI" />
       <Button layoutX="88.0" layoutY="233.0" mnemonicParsing="false" onAction="#goBackOnActionButton" text="Go back" />
       <Button layoutX="434.0" layoutY="233.0" mnemonicParsing="false" onAction="#loadAllKPIOnActionButton" text="Load ALL KPI" />
-      <TableView fx:id="kpiTable" layoutY="269.0" prefHeight="200.0" prefWidth="600.0">
+      <TableView fx:id="kpiTable" layoutY="269.0" prefHeight="200.0" prefWidth="894.0">
         <columns>
-          <TableColumn fx:id="kpiNameCol" prefWidth="105.0" text="KPI Name" />
-          <TableColumn fx:id="descriptionCol" prefWidth="154.0" text="Description" />
-            <TableColumn fx:id="targetValueCol" prefWidth="99.5" text="Target Value" />
-            <TableColumn fx:id="actualValueCol" prefWidth="113.0" text="Actual Value" />
-            <TableColumn fx:id="dateCol" prefWidth="127.5" text="Date" />
+          <TableColumn fx:id="kpiNameCol" prefWidth="180.0" text="KPI Name" />
+          <TableColumn fx:id="descriptionCol" prefWidth="404.0" text="Description" />
+            <TableColumn fx:id="targetValueCol" prefWidth="104.0" text="Target Value" />
+            <TableColumn fx:id="actualValueCol" prefWidth="111.5" text="Actual Value" />
+            <TableColumn fx:id="dateCol" prefWidth="93.5" text="Date" />
         </columns>
       </TableView>
    </children>

@@ -9,10 +9,9 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.directorofInvestmentPromotion.Goal6OrganizenetworkingeventsforinvesotrsController">
+<AnchorPane prefHeight="452.0" prefWidth="1032.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.directorofInvestmentPromotion.Goal6OrganizenetworkingeventsforinvesotrsController">
    <children>
-      <Label alignment="CENTER" prefHeight="60.0" prefWidth="600.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="Organize Networking Events For Investors" />
+      <Label alignment="CENTER" prefHeight="60.0" prefWidth="1032.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="Organize Networking Events For Investors" />
       <Label layoutX="34.0" layoutY="78.0" text="Event Name:" />
       <TextField fx:id="EventNametextField" layoutX="117.0" layoutY="74.0" />
       <Label layoutX="34.0" layoutY="114.0" text="Venue:" />
@@ -26,13 +25,13 @@
       <Button layoutX="66.0" layoutY="216.0" mnemonicParsing="false" onAction="#goBackOnActionButton" text="Go Back" />
       <Button layoutX="274.0" layoutY="216.0" mnemonicParsing="false" onAction="#addEventOnActionButton" text="Add Event" />
       <Button layoutX="465.0" layoutY="216.0" mnemonicParsing="false" onAction="#LoadAllEventsOnActionButton" text="Load All Events" />
-      <TableView fx:id="netEventTable" layoutY="252.0" prefHeight="200.0" prefWidth="600.0">
+      <TableView fx:id="netEventTable" layoutY="252.0" prefHeight="200.0" prefWidth="1032.0">
         <columns>
-          <TableColumn fx:id="netEventNameCol" prefWidth="117.5" text="Event Name" />
-          <TableColumn fx:id="netEventDateCol" prefWidth="77.0" text="Event Date" />
-            <TableColumn fx:id="netVenueCol" prefWidth="86.5" text="Venue" />
-            <TableColumn fx:id="netParticipantsCol" prefWidth="100.0" text="Participants" />
-            <TableColumn fx:id="netDescriptionCol" prefWidth="218.0" text="Description" />
+          <TableColumn fx:id="netEventNameCol" prefWidth="219.5" text="Event Name" />
+          <TableColumn fx:id="netEventDateCol" prefWidth="84.5" text="Event Date" />
+            <TableColumn fx:id="netVenueCol" prefWidth="247.0" text="Venue" />
+            <TableColumn fx:id="netParticipantsCol" prefWidth="79.5" text="Participants" />
+            <TableColumn fx:id="netDescriptionCol" prefWidth="400.5" text="Description" />
         </columns>
       </TableView>
    </children>

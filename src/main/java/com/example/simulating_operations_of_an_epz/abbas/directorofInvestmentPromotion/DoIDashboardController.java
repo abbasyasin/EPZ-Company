@@ -15,7 +15,11 @@ public class DoIDashboardController
 {
 
     @javafx.fxml.FXML
+    private Button dummybutton;
+
+    @javafx.fxml.FXML
     public void initialize() {
+        dummybutton.setVisible(false);
     }
 
     @javafx.fxml.FXML

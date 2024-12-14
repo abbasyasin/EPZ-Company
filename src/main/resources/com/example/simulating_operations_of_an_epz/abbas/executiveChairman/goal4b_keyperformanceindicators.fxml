@@ -9,9 +9,9 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="570.0" prefWidth="654.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.executiveChairman.Goal4bKeyperformanceindicatorsController">
+<AnchorPane prefHeight="571.0" prefWidth="991.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.executiveChairman.Goal4bKeyperformanceindicatorsController">
    <children>
-      <BarChart fx:id="kpiChart" layoutY="56.0" prefHeight="306.0" prefWidth="571.0" title="KPI Performance">
+      <BarChart fx:id="kpiChart" layoutY="56.0" prefHeight="306.0" prefWidth="836.0" title="KPI Performance">
         <xAxis>
           <CategoryAxis label="Date" side="BOTTOM" fx:id="xAxis" />
         </xAxis>
@@ -19,16 +19,16 @@
           <NumberAxis fx:id="yAxis" label="Values" side="LEFT" />
         </yAxis>
       </BarChart>
-      <TableView fx:id="kpiTable" layoutX="1.0" layoutY="362.0" prefHeight="209.0" prefWidth="653.0">
+      <TableView fx:id="kpiTable" layoutX="1.0" layoutY="362.0" prefHeight="209.0" prefWidth="991.0">
          <columns>
-            <TableColumn fx:id="kpiNameCol" prefWidth="105.0" text="KPI Name" />
-            <TableColumn fx:id="descriptionCol" prefWidth="154.0" text="Description" />
-            <TableColumn fx:id="targetValueCol" prefWidth="133.5" text="Target Value" />
-            <TableColumn fx:id="actualValueCol" prefWidth="127.5" text="Actual Value" />
-            <TableColumn fx:id="dateCol" prefWidth="132.0" text="Date" />
+            <TableColumn fx:id="kpiNameCol" prefWidth="202.0" text="KPI Name" />
+            <TableColumn fx:id="descriptionCol" prefWidth="466.0" text="Description" />
+            <TableColumn fx:id="targetValueCol" prefWidth="116.5" text="Target Value" />
+            <TableColumn fx:id="actualValueCol" prefWidth="104.0" text="Actual Value" />
+            <TableColumn fx:id="dateCol" prefWidth="101.5" text="Date" />
          </columns>
       </TableView>
-      <Label alignment="CENTER" layoutY="-4.0" prefHeight="61.0" prefWidth="654.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="Show All KPI and Chart" />
-      <Button layoutX="588.0" layoutY="194.0" mnemonicParsing="false" onAction="#goBackOnActionButton" text="Go Back" />
+      <Label alignment="CENTER" layoutY="-4.0" prefHeight="61.0" prefWidth="991.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="Show All KPI and Chart" />
+      <Button layoutX="892.0" layoutY="197.0" mnemonicParsing="false" onAction="#goBackOnActionButton" text="Go Back" />
    </children>
 </AnchorPane>

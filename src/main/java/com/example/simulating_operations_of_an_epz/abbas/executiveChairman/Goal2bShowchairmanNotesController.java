@@ -1,5 +1,7 @@
 package com.example.simulating_operations_of_an_epz.abbas.executiveChairman;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -11,10 +13,9 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
+import java.io.*;
 import java.time.LocalDate;
+import java.util.Arrays;
 import java.util.Objects;
 
 public class Goal2bShowchairmanNotesController
@@ -67,5 +68,38 @@ public class Goal2bShowchairmanNotesController
             }
             ex.printStackTrace();
         }
+    }
+
+    @javafx.fxml.FXML
+    public void deleteANoteOnActionbutton(ActionEvent actionEvent) {
+        TableView.TableViewSelectionModel<Note> selectionModel = noteTable.getSelectionModel();
+        if(selectionModel.isEmpty()) {
+            System.out.println("select a data before deleting");
+        }
+        ObservableList<Integer> selectedIndices=selectionModel.getSelectedIndices();
+        Integer[] indicesArray=selectedIndices.toArray(new Integer[0]);
+        Arrays.sort(indicesArray);
+        ObservableList<Note> remainingNotes= FXCollections.observableArrayList(noteTable.getItems());
+
+
+        for(int i = indicesArray.length-1;i>=0;i--) {
+            int index=indicesArray[i];
+            remainingNotes.remove(noteTable.getItems().get(index));
+            noteTable.getItems().remove(index);
+
+        }
+        updateNoteFile(remainingNotes,"chairmannotes.bin");
+    }
+
+    private void updateNoteFile(ObservableList<Note> data,String filename) {
+        try(ObjectOutputStream oos=new ObjectOutputStream(new FileOutputStream(filename))) {
+            for(Note note:data) {
+                oos.writeObject(note);
+            }
+
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+
     }
 }

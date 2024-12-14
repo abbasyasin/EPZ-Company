@@ -9,10 +9,9 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="492.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.executiveChairman.Goal3ApproveinternalpoliciesController">
+<AnchorPane prefHeight="545.0" prefWidth="884.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.abbas.executiveChairman.Goal3ApproveinternalpoliciesController">
    <children>
-      <Label alignment="CENTER" prefHeight="57.0" prefWidth="600.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="Internal Policies" />
+      <Label alignment="CENTER" prefHeight="57.0" prefWidth="884.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: yellow;" text="Internal Policies" />
       <Label layoutX="49.0" layoutY="70.0" text="Policy Name:" />
       <TextField fx:id="policyNameTextField" layoutX="132.0" layoutY="66.0" />
       <TextArea fx:id="DescriptionTextArea" layoutX="132.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" />
@@ -20,11 +19,11 @@
       <Label layoutX="339.0" layoutY="70.0" text="Effective Date:" />
       <DatePicker fx:id="effectiveDateDatePicker" layoutX="419.0" layoutY="66.0" />
       <Button layoutX="349.0" layoutY="300.0" mnemonicParsing="false" onAction="#approvePolicyOnActionButton" text="Approve Policy" />
-      <TableView fx:id="policiesTable" layoutY="335.0" prefHeight="210.0" prefWidth="600.0">
+      <TableView fx:id="policiesTable" layoutY="335.0" prefHeight="210.0" prefWidth="884.0">
         <columns>
-          <TableColumn fx:id="policyNameCol" prefWidth="154.0" text="Policy Name" />
-          <TableColumn fx:id="effectiveDateCol" prefWidth="90.0" text="Effective Date" />
-            <TableColumn fx:id="descriptionCol" prefWidth="355.0" text="Description" />
+          <TableColumn fx:id="policyNameCol" prefWidth="305.5" text="Policy Name" />
+          <TableColumn fx:id="effectiveDateCol" prefWidth="113.0" text="Effective Date" />
+            <TableColumn fx:id="descriptionCol" prefWidth="464.5" text="Description" />
         </columns>
       </TableView>
       <Button layoutX="31.0" layoutY="300.0" mnemonicParsing="false" onAction="#goBackOnActionButton" text="Go back" />
