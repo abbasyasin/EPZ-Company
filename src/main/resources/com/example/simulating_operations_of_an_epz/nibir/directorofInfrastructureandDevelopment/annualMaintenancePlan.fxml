@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.nibir.directorofInfrastructureandDevelopment.AnnualMaintenancePlancontroller">
+   <children>
+      <Label layoutX="213.0" layoutY="40.0" text="Annual Maintenance Plan" />
+      <Label layoutX="71.0" layoutY="96.0" text="Mantenantenance" />
+      <ComboBox fx:id="AssignedteamComboBox" layoutX="186.0" layoutY="122.0" prefWidth="150.0" />
+      <Label layoutX="83.0" layoutY="126.0" text="Assigned team" />
+      <TextField fx:id="MantenantenanceTextField" layoutX="187.0" layoutY="92.0" />
+      <DatePicker fx:id="DatePiker" layoutX="174.0" layoutY="165.0" />
+      <Label layoutX="105.0" layoutY="169.0" text="Date" />
+      <Button layoutX="45.0" layoutY="36.0" mnemonicParsing="false" onAction="#BackButtonOnClick" text="Back" />
+      <TableView fx:id="DataTableVIew" layoutX="45.0" layoutY="221.0" prefHeight="141.0" prefWidth="399.0">
+        <columns>
+          <TableColumn fx:id="MantenantenanceTableColam" prefWidth="140.0" text="Mantenantenance" />
+          <TableColumn fx:id="assignedteamTableColam" prefWidth="127.0" text="Assigned team" />
+            <TableColumn fx:id="DateTablecolm" prefWidth="131.0" text="Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="472.0" layoutY="337.0" mnemonicParsing="false" onAction="#ApprovePlanButtonOnClick" text="Approve Plan" />
+   </children>
+</AnchorPane>

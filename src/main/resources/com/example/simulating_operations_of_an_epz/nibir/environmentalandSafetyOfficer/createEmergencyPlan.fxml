@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.nibir.environmentalandSafetyOfficer.CreateEmergencyPlanController">
+   <children>
+      <Label layoutX="264.0" layoutY="58.0" text="Create Emergency Plan" />
+      <Label layoutX="21.0" layoutY="117.0" prefHeight="17.0" prefWidth="88.0" text="Response steps" />
+      <Label layoutX="10.0" layoutY="161.0" text="Emergency contacts" />
+      <TextField fx:id="responsestepsTeXtField" layoutX="115.0" layoutY="113.0" />
+      <TextField fx:id="emergencycontactsTexTField" layoutX="115.0" layoutY="157.0" />
+      <Button layoutX="63.0" layoutY="46.0" mnemonicParsing="false" onAction="#backButtonOnClick" text="Back" />
+      <Button layoutX="385.0" layoutY="361.0" mnemonicParsing="false" onAction="#submitPlanButtonOnClick" text="Submit Plan" />
+      <TableView fx:id="DatatableView" layoutX="77.0" layoutY="200.0" prefHeight="147.0" prefWidth="258.0">
+        <columns>
+          <TableColumn fx:id="ResponsestepsTableColm" prefWidth="122.0" text="Response steps" />
+          <TableColumn fx:id="EmergencycontactsTableColm" prefWidth="135.0" text="Emergency contacts" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="CompanynameTextField" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_operations_of_an_epz.nibir.environmentalandSafetyOfficer.MonitorWasteManagementController">
+   <children>
+      <Label layoutX="234.0" layoutY="54.0" text="Monitor Waste Management" />
+      <Label layoutX="81.0" layoutY="118.0" text="Company name" />
+      <Label layoutX="81.0" layoutY="150.0" text="Waste type" />
+      <Label layoutX="81.0" layoutY="183.0" text="Violation" />
+      <TextField fx:id="companynameTextField" layoutX="175.0" layoutY="114.0" />
+      <TextField fx:id="WastetypetextField" layoutX="175.0" layoutY="146.0" />
+      <TextField fx:id="violationTextField" layoutX="165.0" layoutY="179.0" />
+      <ComboBox fx:id="sendWarningComboBox" layoutX="450.0" layoutY="114.0" prefWidth="150.0" />
+      <Label layoutX="340.0" layoutY="118.0" text="Send Warning" />
+      <Button layoutX="469.0" layoutY="167.0" mnemonicParsing="false" onAction="#submitActionButtonOnAction" text="Submit Action" />
+      <Button layoutX="55.0" layoutY="42.0" mnemonicParsing="false" onAction="#BackButtonOnAction" text="Back" />
+      <TableView fx:id="DataTableView" layoutX="65.0" layoutY="235.0" prefHeight="152.0" prefWidth="451.0">
+        <columns>
+          <TableColumn fx:id="CompanynameTableColm" prefWidth="113.0" text="Company name" />
+          <TableColumn fx:id="wastetypeTableColm" prefWidth="108.0" text="Waste type" />
+            <TableColumn fx:id="ViolationTableColm" prefWidth="114.0" text="Violation" />
+            <TableColumn fx:id="SendWarningTableColm" prefWidth="113.0" text="Send Warning" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
